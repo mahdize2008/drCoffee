@@ -1,0 +1,51 @@
+.label-check {
+    @apply flex items-center text-sm text-brown font-medium cursor-pointer
+}
+.label-check-circle {
+    @apply w-[18px] h-[18px] rounded-full bg-natural-alpha ml-2.5 flex items-center justify-center
+}
+.label-check-circle.label-check-circle-darker {
+    @apply bg-brown-light bg-opacity-30
+}
+.label-check-circle i {
+    @apply text-[9px] text-white opacity-0
+}
+.label-check-input:checked + .label-check {
+    @apply border-primary
+}
+.label-check-input:checked + .label-check .label-check-circle {
+    @apply bg-primary
+}
+.label-check-input:checked + .label-check .label-check-circle i {
+    @apply opacity-100
+}
+.label-check-input:checked + .label-check .label-check-checked-primary {
+    @apply text-primary
+}
+.label-check-input:checked + .label-check .label-check-checked-brown {
+    @apply text-brown
+}
+
+.label-check-input {
+    @apply hidden
+}
+
+
+
+
+
+.label-color {
+    @apply flex flex-col justify-center items-center text-xs-plus text-brown font-medium cursor-pointer
+}
+.label-color-sq {
+   @apply p-1 rounded-md border-[1.5px] border-solid border-natural-alpha block w-full aspect-square mb-1
+}
+.label-color-sq span {
+    @apply w-full h-full rounded-md block
+}
+.label-color-input {
+    @apply hidden
+}
+.label-color-input:checked + .label-color .label-color-sq {
+    @apply border-2 border-primary
+}

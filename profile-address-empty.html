@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/noUi/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+
+    <!--START-MYADDRES-MODAL-->
+    <div class="fixed w-full h-full top-0 z-[90] overflow-y-auto bg-white">
+        <div class="border-b-2 border-natural-alpha p-3"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="md:container text-brown text-md font-semibold flex items-center">
+                <a href="#"
+                    class="ml-4 w-12 h-12 flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                    <i class="icon-arrow-right"></i>
+                </a>
+                آدرس‌های من
+            </div>
+        </div>
+        <div class="h-[calc(100%-74px)] flex items-center justify-center flex-col px-4 container">
+            <img src="assets/img/none.png" alt="" class="mx-auto mb-3 ">
+            <div class="text-base font-bold block text-center text-brown mb-1">
+                چیزی برای نمایش وجود نداره :(
+            </div>
+            <div class="text-sm font-medium block text-center text-brown-lighter mb-6">
+                آدرس تحویلت رو اضافه کن!
+            </div>
+            <a href="#"
+                class="btn-show-modal flex items-center text-base font-bold justify-center bg-primary rounded-lg w-full py-3.5 text-white"
+                data-modal="modal-add-addres">
+                افزودن آدرس جدید
+                <i class="icon-add-square text-lg mr-2"></i>
+            </a>
+        </div>
+    </div>
+    <!--END-MYADDRES-MODAL-->
+
+    <!--START-ADD-ADDRESS-MODAL-->
+    <div class="modal modal-add-addres fixed-box fixed w-full h-full top-0 z-[90] overflow-y-auto bg-white"
+        style="display: none;">
+        <div class="border-b-2 border-natural-alpha p-3"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="md:container text-brown text-md font-semibold flex items-center">
+                <a href="#"
+                    class="btn-close-modal ml-4 w-12 h-12 flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                    <i class="icon-arrow-right"></i>
+                </a>
+                افزودن آدرس
+            </div>
+        </div>
+        <div class="container py-5">
+            <form action="">
+                <div class="add-address-step-one sm:-m-2 sm:flex sm:flex-wrap">
+                    <div class="sm:w-1/2 sm:p-2">
+                        <div class="form-group-wrapper mb-4">
+                            <label class="form-group-label">نام و نام خانوادگی گیرنده</label>
+                            <input type="text" placeholder="۳۳۶۰۳۲۴۶۹۲" />
+                        </div>
+                    </div>
+                    <div class="sm:w-1/2 sm:p-2">
+                        <div class="form-group-wrapper mb-4">
+                            <label class="form-group-label"> استان محل سکونت </label>
+                            <select>
+                                <option value="">استان محل سکونت را انتخاب کنید</option>
+                                <option value="">استان محل سکونت را انتخاب کنید</option>
+                                <option value="">استان محل سکونت را انتخاب کنید</option>
+                                <option value="">استان محل سکونت را انتخاب کنید</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sm:w-1/2 sm:p-2">
+                        <div class="form-group-wrapper mb-4">
+                            <label class="form-group-label"> شهر محل سکونت </label>
+                            <select>
+                                <option value="">کرمانشاه</option>
+                                <option value="">کرمانشاه</option>
+                                <option value="">کرمانشاه</option>
+                                <option value="">کرمانشاه</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sm:w-1/2 sm:p-2">
+                        <div class="form-group-wrapper">
+                            <label class="form-group-label">شماره همراه</label>
+                            <input type="text" placeholder="۳۳۶۰۳۲۴۶۹۲" />
+                        </div>
+                    </div>
+                    <div class="sm:w-1/2 sm:p-2">
+                        <div class="form-group-wrapper">
+                            <label class="form-group-label">کد پستی</label>
+                            <input type="text" placeholder="۳۳۶۰۳۲۴۶۹۲" />
+                        </div>
+                    </div>
+                    <div class="sm:w-full sm:p-2">
+                        <div class="form-group-wrapper small-theme">
+                            <label class="form-group-label">آدرس پستی</label>
+                            <textarea type="text" placeholder="آدرس پستی را وارد نمایید" class="!h-[90px]"></textarea>
+                        </div>
+                    </div>
+                    <div class="sm:w-full sm:p-2">
+                        <div class="btn btn-primary w-full next-add-address-next">ثبت و ادامه</div>
+                    </div>
+                </div>
+                <div class="add-address-step-two" style="display: none;">
+                    <div class="text-xs text-brown-lighter flex items-center mb-4">
+                        <i class="icon-information text-xl text-brown ml-2.5"></i>
+                        جهت دسترسی آسان‌تر مامور تحویل، لطفا لوکیشن دقیق محل تحویل مرسوله را روی نقشه مشخص نمایید.
+                    </div>
+                    <iframe class="w-full h-96 rounded-xl mb-4 border-[1.5px] border-solid border-natural-alpah"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d810.0301760257431!2d51.38706114253907!3d35.69864718735069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1703932518208!5m2!1sen!2s"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="btn btn-outline-primary-natural w-full mb-4 !shadow-action-more">
+                        <i class="icon-pin reverse-margin-icon"></i>
+                        ثبت روی نقشه
+                    </button>
+                    <button class="btn btn-primary w-full">
+                        ثبت نهایی
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--END-ADD-ADDRESS-MODAL-->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/noUi/nouislider.min.js"></script>
+    <script src="assets/js/public.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/noUi/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <div class="backdrop" style="display: none;"></div>
+
+
+    <!-- START-MENU -->
+    <div class="menu fixed-box fixed w-full h-full top-0 bg-white z-[90] overflow-y-auto -right-full max-w-[390px]">
+        <div class="border-b-2 border-natural-alpha pt-4" style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="flex items-center justify-between mb-3.5 px-4">
+                <a href="#"
+                    class="btn-close-menu xs:w-12 w-[42px] xs:h-12 h-[42px] flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                    <i class="icon-close"></i>
+                </a>
+                <a href="#" class="text-base font-bold text-brown flex items-center transition-all hover:text-primary">
+                    ۰۲۱-۴۵۶۷
+                    <img src="assets/img/icon-call.svg" alt="" class="mr-2 h-5">
+                </a>
+            </div>
+            <ul class="flex items-center mb-3 px-4">
+                <li class="py-2 ml-4 last:ml-0 w-1/2">
+                    <a href="" class="btn btn-outline-natural">
+                        <i class="icon-user !mr-0 ml-2"></i>
+                        ورود و عضویت
+                    </a>
+                </li>
+                <li class="py-2 ml-4 last:ml-0 w-1/2">
+                    <a href="" class="btn btn-outline-natural">
+                        بلاگ دکتر کافی
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex items-center">
+                <li data-filter="one"
+                    class="filter-tab cursor-pointer relative text-brown-lighter [&.active]:text-primary xs:text-base text-sm-plus font-semibold pt-2 pb-3 text-center w-1/2 active">
+                    دسته‌بندی محصولات
+                </li>
+                <li data-filter="two"
+                    class="filter-tab cursor-pointer relative text-brown-lighter [&.active]:text-primary xs:text-base text-sm-plus font-semibold pt-2 pb-3 text-center w-1/2">
+                    دسته‌بندی محصولات
+                </li>
+            </ul>
+        </div>
+        <div class="bg-menu-light">
+            <ul class="mb-2">
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            دانه قهوه
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul style="display: none;" class="accordion-item-body px-4 py-1 bg-menu-light">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            قهوه ساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            اسپرسوساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            اسپرسوساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            اسپرسوساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item two border-b-2 last:border-b-0 border-natural-alpha px-4" style="display: none;">
+                    <a href="#" class="flex justify-between items-center py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            تماس با ما
+                        </h2>
+                        <i class="icon-left text-brown-lighter text-2xs font-bold"></i>
+                    </a>
+                </li>
+                <li class="menu-filter-item two border-b-2 last:border-b-0 border-natural-alpha px-4" style="display: none;">
+                    <a href="#" class="flex justify-between items-center py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            درباره ما
+                        </h2>
+                        <i class="icon-left text-brown-lighter text-2xs font-bold"></i>
+                    </a>
+                </li>
+                <li class="menu-filter-item two border-b-2 last:border-b-0 border-natural-alpha px-4" style="display: none;">
+                    <a href="#" class="flex justify-between items-center py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            شعب حضوری
+                        </h2>
+                        <i class="icon-left text-brown-lighter text-2xs font-bold"></i>
+                    </a>
+                </li>
+            </ul>
+             
+        </div>
+    </div>
+    <!-- END-MENU -->
+
+
+
+    <!-- START-SEARCH-BOX -->
+    <div class="search-box fixed-box fixed w-full h-full top-0 z-50 overflow-y-auto bg-white -right-full">
+        <div class="p-4 border-b-2 border-b-natural-alpha"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <form class="w-full bg-white rounded-full flex overflow-hidden">
+                <div class="flex h-12 border-2 border-natural-alpha border-l-0 grow rounded-r-full shrink">
+                    <a href="#"
+                        class="btn-close-search-box shrink-0 flex items-center justify-center text-brown text-md px-3.5">
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <input type="text" class="bg-white w-full outline-none pl-2">
+                </div>
+                <button class="flex items-center max-xs:justify-center xs:px-4 max-xs:w-12 max-xs:h-12 bg-primary text-white !shrink-0">
+                    <span class="max-xs:hidden">جستجو</span><i class="icon-search -rotate-[45deg] xs:mr-2"></i>
+                </button>
+            </form>
+        </div>
+        <div class="swiper swiper-container swiper-search-product pt-7 mb-4 px-4">
+            <div class="swiper-wrapper">
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="flex items-center">
+                        <div class="shrink-0 ml-3">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="-m-1.5 flex items-center">
+                        <div class="p-1.5 shrink-0">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="p-1.5 text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="-m-1.5 flex items-center">
+                        <div class="p-1.5 shrink-0">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="p-1.5 text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="-m-1.5 flex items-center">
+                        <div class="p-1.5 shrink-0">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="p-1.5 text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="px-4">
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-primary text-sm-plus py-3">
+                    <i class="icon-search rotate-[135deg] ml-3 text-base-plus"></i>
+                    مشاهده همه نتایج
+                </a>
+            </li>
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-brown text-sm-plus py-3">
+                    <i class="icon-up-right-arrow ml-3 text-xs-plus text-brown-lighter"></i>
+                    اسپرسوساز نسپرسو
+                </a>
+            </li>
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-brown text-sm-plus py-3">
+                    <i class="icon-up-right-arrow ml-3 text-xs-plus text-brown-lighter"></i>
+                    موکاپات
+                </a>
+            </li>
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-brown text-sm-plus py-3">
+                    <i class="icon-up-right-arrow ml-3 text-xs-plus text-brown-lighter"></i>
+                    قهوه‌جوش دمی
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END-SEARCH-BOX -->
+
+
+    <!-- START-PRODUCT-FILTER-BOX -->
+    <div class="product-filter-box fixed-box fixed w-full h-full top-0 z-[90] overflow-y-auto bg-white"
+        style="display: none;">
+        <div class="border-b-2 border-natural-alpha p-4"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="md:container flex items-center justify-between">
+                <div class="flex items-center text-brown text-md font-semibold">
+                    <a href="#"
+                        class="btn-close-product-filter-box ml-4 w-12 h-12 flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    فیلترها
+                </div>
+                <a href="#" class="text-sm font-semibold text-brown flex items-center transition-all hover:text-primary">
+                    حذف همه
+                </a>
+            </div>
+        </div>
+        <div class="container pt-4 mb-32">
+            <form class="header-search-box flex-grow flex items-center mb-4">
+                <button class="h-12 w-14 bg-natural text-md text-primary rounded-r-full">
+                    <i class="icon-search transform rotate-[135deg]"></i>
+                </button>
+                <div class="input-container header-search-input w-full">
+                    <input type="text" placeholder="عنوان محصول مورد نظر را وارد کنید..." class="input input-round">
+                </div>
+            </form>
+            <ul>
+                <li class="sidebar-box border-2 border-solid border-natural-alpha rounded-xl mb-4 last:mb-0">
+                    <div class="sidebar-box-header flex items-center p-4 cursor-pointer">
+                        <div class="text-sm-plus font-bold text-brown">
+                            نمایش کالاها
+                        </div>
+                        <i class="icon-down text-xs text-brown-lighter mr-auto"></i>
+                    </div>
+                    <div class="sidebar-box-body p-4 !pt-0" style="display: none">
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="c-1" class="label-check-input">
+                            <label for="c-1" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                فقط نمایش کالاهای موجود
+                            </label>
+                        </div>
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="c-2" class="label-check-input">
+                            <label for="c-2" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                نمایش تمام کالاها
+                            </label>
+                        </div>
+                    </div>
+                </li>
+                <li class="sidebar-box border-2 border-solid border-natural-alpha rounded-xl mb-4 last:mb-0">
+                    <div class="sidebar-box-header flex items-center p-4 cursor-pointer">
+                        <div class="text-sm-plus font-bold text-brown">
+                            محدوده قیمت
+                        </div>
+                        <i class="icon-down text-xs text-brown-lighter mr-auto"></i>
+                    </div>
+                    <div class="sidebar-box-body p-4 !pt-0" style="display: none">
+                        <div class="range-price mb-3">
+                            <div id="slider"></div>
+                        </div>
+                        <div class="text-sm text-brown-lighter flex items-center justify-between mb-1">
+                            حداقل قیمت
+                            <span class="font-bold text-primary text-base">
+                                <span id="lowerVal"></span>
+                                ت
+                            </span>
+                        </div>
+                        <div class="text-sm text-brown-lighter flex items-center justify-between">
+                            حداکثر قیمت
+                            <span class="font-bold text-primary text-base">
+                                <span id="upperVal"></span>
+                                ت
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="sidebar-box border-2 border-solid border-natural-alpha rounded-xl mb-4 last:mb-0">
+                    <div class="sidebar-box-header flex items-center p-4 cursor-pointer">
+                        <div class="text-sm-plus font-bold text-brown">
+                            نوع قهوه
+                        </div>
+                        <i class="icon-down text-xs text-brown-lighter mr-auto"></i>
+                    </div>
+                    <div class="sidebar-box-body p-4 !pt-0" style="display: none">
+                        <ul class="flex flex-wrap -mb-2.5">
+                            <li class="ml-2.5 mb-2.5">
+                                <a href="" class="btn btn-round btn-sm btn-natural-brown-lightness font-medium">
+                                    روبوستا
+                                </a>
+                            </li>
+                            <li class="ml-2.5 mb-2.5">
+                                <a href="" class="btn btn-round btn-sm btn-natural-brown-lightness font-medium">
+                                    قهوه فوری
+                                </a>
+                            </li>
+                            <li class="ml-2.5 mb-2.5">
+                                <a href="" class="btn btn-round btn-sm btn-natural-brown-lightness font-medium">
+                                    پودر قهوه نسکافه
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-box border-2 border-solid border-natural-alpha rounded-xl mb-4 last:mb-0">
+                    <div class="sidebar-box-header flex items-center p-4 cursor-pointer">
+                        <div class="text-sm-plus font-bold text-brown">
+                            نوع برند
+                        </div>
+                        <i class="icon-down text-xs text-brown-lighter mr-auto"></i>
+                    </div>
+                    <div class="sidebar-box-body p-4 !pt-0" style="display: none">
+                        <div class="mb-4 last:mb-0">
+                            <form action=""
+                                class="flex-grow flex items-center  border-b-[1.5px] border-solid border-natural-alpha pb-2">
+                                <button class="w-auto text-md text-primary">
+                                    <i class="icon-search transform rotate-[135deg]"></i>
+                                </button>
+                                <div class="input-container input-container-bg-none w-full">
+                                    <input type="text" placeholder="جستجو..." class="input !h-auto">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="b-1" class="label-check-input">
+                            <label for="b-1" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                نسکافه
+                                <span class="text-brown-lighter mr-auto">
+                                    Nescafe
+                                </span>
+                            </label>
+                        </div>
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="b-2" class="label-check-input">
+                            <label for="b-2" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                نسکافه
+                                <span class="text-brown-lighter mr-auto">
+                                    Nescafe
+                                </span>
+                            </label>
+                        </div>
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="b-3" class="label-check-input">
+                            <label for="b-3" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                نسکافه
+                                <span class="text-brown-lighter mr-auto">
+                                    Nescafe
+                                </span>
+                            </label>
+                        </div>
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="b-4" class="label-check-input">
+                            <label for="b-4" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                نسکافه
+                                <span class="text-brown-lighter mr-auto">
+                                    Nescafe
+                                </span>
+                            </label>
+                        </div>
+                        <div class="mb-3 last:mb-0">
+                            <input type="checkbox" id="b-5" class="label-check-input">
+                            <label for="b-5" class="label-check">
+                                <span class="label-check-circle">
+                                    <i class="icon-check"></i>
+                                </span>
+                                نسکافه
+                                <span class="text-brown-lighter mr-auto">
+                                    Nescafe
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </li>
+                <li class="sidebar-box border-2 border-solid border-natural-alpha rounded-xl mb-4 last:mb-0">
+                    <div class="sidebar-box-header flex items-center p-4 cursor-pointer">
+                        <div class="text-sm-plus font-bold text-brown">
+                            رنگ
+                        </div>
+                        <i class="icon-down text-xs text-brown-lighter mr-auto"></i>
+                    </div>
+                    <div class="sidebar-box-body p-4 !pt-0" style="display: none">
+                        <ul class="flex flex-wrap -m-1">
+                            <li class="w-1/6 p-1">
+                                <input type="checkbox" id="color-1" class="label-color-input">
+                                <label for="color-1" class="label-color">
+                                    <span class="label-color-sq">
+                                        <span style="background-color: #666"></span>
+                                    </span>
+                                    طوسی
+                                </label>
+                            </li>
+                            <li class="w-1/6 p-1">
+                                <input type="checkbox" id="color-2" class="label-color-input">
+                                <label for="color-2" class="label-color">
+                                    <span class="label-color-sq">
+                                        <span style="background-color: #C91212"></span>
+                                    </span>
+                                    قرمز
+                                </label>
+                            </li>
+                            <li class="w-1/6 p-1">
+                                <input type="checkbox" id="color-3" class="label-color-input">
+                                <label for="color-3" class="label-color">
+                                    <span class="label-color-sq">
+                                        <span style="background-color: #0E53D9"></span>
+                                    </span>
+                                    آبی
+                                </label>
+                            </li>
+                            <li class="w-1/6 p-1">
+                                <input type="checkbox" id="color-4" class="label-color-input">
+                                <label for="color-4" class="label-color">
+                                    <span class="label-color-sq">
+                                        <span style="background-color: #FFAA2B"></span>
+                                    </span>
+                                    زرد
+                                </label>
+                            </li>
+                            <li class="w-1/6 p-1">
+                                <input type="checkbox" id="color-2" class="label-color-input">
+                                <label for="color-2" class="label-color">
+                                    <span class="label-color-sq">
+                                        <span style="background-color: #C91212"></span>
+                                    </span>
+                                    قرمز
+                                </label>
+                            </li>
+                            <li class="w-1/6 p-1">
+                                <input type="checkbox" id="color-3" class="label-color-input">
+                                <label for="color-3" class="label-color">
+                                    <span class="label-color-sq">
+                                        <span style="background-color: #0E53D9"></span>
+                                    </span>
+                                    آبی
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fixed bottom-0 bg-white right-0 w-full p-4"
+            style="box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.07);">
+            <div class="xs:container">
+                <a href="#"
+                class="flex items-center justify-center py-4 rounded-[10px] text-base font-bold text-white w-full bg-primary">
+                اعمال فیلترها
+            </a>
+            </div>
+        </div>
+    </div>
+    <!-- END-PRODUCT-FILTER-BOX -->
+
+    <!-- START-SORT-BOX -->
+    <div class="product-sort-box fixed-box fixed w-full h-[400px] bottom-0 px-4 z-[90] overflow-y-auto bg-white rounded-t-2xl border-t-2 border-t-natural"
+        style="display: none;">
+        <div class="md:container">
+            <div class="h-[5px] bg-natural-alpha mx-auto w-[80px] mt-3 mb-6 rounded-full"></div>
+            <div class="flex items-center text-md text-brown font-bold mb-4">
+                <i class="icon-sort text-md font-bold text-primary ml-3"></i>
+                نمایش بر اساس
+            </div>
+            <ul>
+                <li class="border-b border-natural-alpha">
+                    <input type="radio" class="hidden sort-filter" name="sort-filter" id="filter1" checked>
+                    <label for="filter1" class="flex items-center text-sm-plus text-brown font-medium group py-3.5">
+                        <i class="icon-checked-circle text-primary hidden text-md ml-2.5"></i>
+                        نمایش همه
+                    </label>
+                </li>
+                <li class="border-b border-natural-alpha">
+                    <input type="radio" class="hidden sort-filter" name="sort-filter" id="filter2">
+                    <label for="filter2" class="flex items-center text-sm-plus text-brown font-medium group py-3.5">
+                        <i class="icon-checked-circle text-primary hidden text-md ml-2.5"></i>
+                        ارزانترین
+                    </label>
+                </li>
+                <li class="border-b border-natural-alpha">
+                    <input type="radio" class="hidden sort-filter" name="sort-filter" id="filter3">
+                    <label for="filter3" class="flex items-center text-sm-plus text-brown font-medium group py-3.5">
+                        <i class="icon-checked-circle text-primary hidden text-md ml-2.5"></i>
+                        گرانترین
+                    </label>
+                </li>
+                <li class="border-b border-natural-alpha">
+                    <input type="radio" class="hidden sort-filter" name="sort-filter" id="filter4">
+                    <label for="filter4" class="flex items-center text-sm-plus text-brown font-medium group py-3.5">
+                        <i class="icon-checked-circle text-primary hidden text-md ml-2.5"></i>
+                        پربازدیدترین
+                    </label>
+                </li>
+                <li class="border-b border-natural-alpha">
+                    <input type="radio" class="hidden sort-filter" name="sort-filter" id="filter5">
+                    <label for="filter5" class="flex items-center text-sm-plus text-brown font-medium group py-3.5">
+                        <i class="icon-checked-circle text-primary hidden text-md ml-2.5"></i>
+                        بالاترین امتیاز
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END-SORT-BOX -->
+
+
+    <!--START-HEADER-->
+    <header id="header" class="header shadow-header">
+        <div class="py-3">
+            <div class="container flex items-center justify-between">
+                <div class="py-2 last:ml-0">
+                    <a href="" class="menu-button btn btn-outline-natural aspect-square !p-0">
+                        <i class="icon-menu !mr-0"></i>
+                    </a>
+                </div>
+                <a href="" class="block">
+                    <img src="assets/img/logo.png" alt="" class="max-w-[130px]">
+                </a>
+
+                <ul class="flex items-center">
+                    <li class="py-2 ml-4 last:ml-0">
+                        <a href="" class="btn btn-primary btn-sq">
+                            <span class="btn-number-cart">3</span>
+                            <i class="icon-shopping-bag !text-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pb-5">
+            <div class="container flex items-center">
+                <form class="header-search-box flex-grow flex items-center">
+                    <button class="h-12 w-14 bg-natural text-md text-primary rounded-r-full">
+                        <i class="icon-search transform rotate-[135deg]"></i>
+                    </button>
+                    <div class="input-container header-search-input w-full">
+                        <input type="text" placeholder="عنوان محصول مورد نظر را وارد کنید..." class="input input-round">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--END-HEADER-->
+
+    <!--START-MAIN-->
+    <main class="main-gradient-bg">
+
+
+        <!--START-BREAD-CRUMB-->
+        <div class="py-5 bg-white z-10 mb-7">
+            <div class="container">
+                <ul class="flex items-center whitespace-nowrap overflow-x-auto overflow-visible -mx-3">
+                    <li class="bread-crumb-item relative px-3 last:after:hidden">
+                        <a href="" class="text-sm font-medium block text-brown transition-all hover:text-primary">
+                            صفحه اصلی
+                        </a>
+                    </li>
+                    <li class="bread-crumb-item relative px-3 last:after:hidden">
+                        <a href="" class="text-sm font-medium block text-brown transition-all hover:text-primary">
+                            تنقلات و افزودنی
+                        </a>
+                    </li>
+                    <li class="bread-crumb-item relative px-3 last:after:hidden">
+                        <a href="" class="text-sm font-medium block text-brown transition-all hover:text-primary">
+                            شکلات
+                        </a>
+                    </li>
+                    <li class="bread-crumb-item relative px-3 last:after:hidden">
+                        <span class="text-sm font-medium block text-brown-lighter">
+                            شکلات تلخ
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--END-BREAD-CRUMB-->
+
+        <!--START-HEAD-LIST-->
+        <div class="mb-between-section">
+            <div class="container">
+                <div class="header-section mb-3">
+                    <img src="assets/img/circles.png" alt="" class="header-section-shape">
+                    <div class="header-section-title ml-0">
+                        لوازم جانبی قهوه‌ساز
+                    </div>
+                </div>
+                <img src="assets/img/img-1.png" alt=""
+                    class="max-h-[200px] max-w-full object-contain object-bottom-center mx-auto mb-7">
+                <p class="text-public mb-0 px-7">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                    نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
+                </p>
+            </div>
+        </div>
+
+        <!--END-HEAD-LIST-->
+
+
+        <!--START-ARCHIVE-->
+        <div class="mb-between-section">
+            <div class="container">
+                <ul class="flex xs:-m-2 -m-1 !mb-2.5">
+                    <li class="w-1/2 xs:p-2 p-1">
+                        <a href="#"
+                            class="product-sort-select flex items-center bg-natural xs:p-4 p-3 rounded-xl text-center xs:text-base text-sm-plus text-brown font-bold">
+                            <i class="icon-sort xs:text-md text-base font-bold text-primary ml-3"></i>
+                            پربازدیدترین
+                            <i class="icon-down mr-auto text-xs font-bold text-brown-light/60"></i>
+                        </a>
+                    </li>
+                    <li class="w-1/2 xs:p-2 p-1">
+                        <a href="#"
+                            class="product-filter-select flex items-center bg-natural xs:p-4 p-3 rounded-xl text-center xs:text-base text-sm-plus text-brown font-bold">
+                            <i class="icon-filter xs:text-md text-base font-bold text-primary ml-3"></i>
+                            فیلترها
+                        </a>
+                    </li>
+                </ul>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-4 last:mb-0 flex items-center rounded-xl border-2 border-solid border-natural-alpha p-4">
+                    <div class="w-1/3 shrink-0">
+                        <a href="" class="block mb-4">
+                            <img src="assets/img/p-1.png" alt="" class="w-full h-32 object-contain object-bottom">
+                        </a>
+                        <div class="flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #74564C">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #E25020">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #F4F1F0">
+                            </div>
+                            <div class="w-1.5 h-1.5 rounded-full ml-1.5 last:ml-0" style="background-color: #FA2"></div>
+                        </div>
+                    </div>
+                    <div class="w-2/3 item-product item-product-none-gradient bg-white relative mr-4">
+
+                        <a href="" class="text-sm-plus text-brown block mb-5">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم
+                        </a>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="text-xs-plus font-medium py-[1px] px-2.5 bg-secondary text-primary-dark bg-opacity-40 rounded-full w-fit">
+                                ۲۵٪ تخفیف
+                            </div>
+                            <div class="text-sm text-brown flex items-center font-semibold">
+                                ۴.۵
+                                <i class="icon-star text-brown-lighter mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="btn btn-sm btn-brown-lightness btn-sq shrink-0">
+                                <i class="icon-shopping-bag"></i>
+                            </a>
+                            <div class="text-md text-primary font-bold text-left leading-[1.2]">
+                                <del class="text-sm-plus text-brown-lighter font-medium block">
+                                    ۱۰,۲۰۰,۰۰۰
+                                </del>
+                                ۵,۵۰۰,۰۰۰
+                                <span class="text-sm">
+                                    تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="" class="btn btn-round btn-sm btn-brown-lightness btn-sq btn-sq-swiper-nav">
+                            <i class="icon-right"></i>
+                        </a>
+                        <ul class="mx-2 rounded-full bg-natural flex items-center px-2">
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold w-10 h-10 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold w-10 h-10 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="active text-base text-brown font-bold w-10 h-10 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    3
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold w-10 h-10 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    ...
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold w-10 h-10 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    15
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn-round btn-sm btn-brown-lightness btn-sq btn-sq-swiper-nav">
+                            <i class="icon-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END-ARCHIVE-->
+
+
+        <!--START-ABOUT-US-TEXT-->
+        <div class="mb-between-section">
+            <div class="container">
+                <div class="header-section mb-3">
+                    <i class="icon-information header-section-icon"></i>
+
+                    <div class="header-section-title ml-0">
+                        درباره‌ی دکتر کافی
+                    </div>
+                </div>
+                <div class="header-section-title ml-0 mb-3">
+                    جامع‌ترین مرجع خرید آنلاین قهوه و لوازم جانبی!
+                </div>
+                <p class="text-public mb-5">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                    نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته
+                    حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                    داشت که تمام و دشواری موجود در ارائه راهکارها...
+                </p>
+            </div>
+        </div>
+        <!--END-ABOUT-US-TEXT-->
+
+
+        <!--START-FAQ-->
+        <div class="pb-between-section">
+            <div class="container">
+                <div class="container-sm">
+                    <div class="header-section mb-3">
+                        <i class="icon-help header-section-icon"></i>
+                        <div class="header-section-title ml-0">
+                            سوالات متداول شما!
+                        </div>
+                    </div>
+                    <ul class="accordionMenu">
+                        <li class="group itemAccordion border-b-2 border-solid border-natural-alpha last:border-b-0">
+                            <div
+                                class="dropDownlink text-brown text-sm-plus font-bold flex items-center py-4 px-2.5 cursor-pointer">
+                                <i class="icon-add text-base text-primary ml-4 block group-[&.active]:hidden"></i>
+                                <i class="icon-minus text-base text-primary ml-4 hidden group-[&.active]:block"></i>
+                                فیلتربندی سایدبار: محدوده قیمت، فیلتر های برند، رنگ، نوع، جست و جو و نمایش براساس؟
+                            </div>
+                            <div class="subMenu pb-4 px-2.5" style="display: none">
+                                <p class="text-public mb-0">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                    متخصصان را می طلبد و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد.
+                                </p>
+                            </div>
+
+                        </li>
+                        <li class="group itemAccordion border-b-2 border-solid border-natural-alpha last:border-b-0">
+                            <div
+                                class="dropDownlink text-brown text-sm-plus font-bold flex items-center py-4 px-2.5 cursor-pointer">
+                                <i class="icon-add text-base text-primary ml-4 block group-[&.active]:hidden"></i>
+                                <i class="icon-minus text-base text-primary ml-4 hidden group-[&.active]:block"></i>
+                                فیلتربندی سایدبار: محدوده قیمت، فیلتر های برند، رنگ، نوع، جست و جو و نمایش براساس؟
+                            </div>
+                            <div class="subMenu pb-4 px-2.5" style="display: none">
+                                <p class="text-public mb-0">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                    متخصصان را می طلبد و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد.
+                                </p>
+                            </div>
+
+                        </li>
+                        <li class="group itemAccordion border-b-2 border-solid border-natural-alpha last:border-b-0">
+                            <div
+                                class="dropDownlink text-brown text-sm-plus font-bold flex items-center py-4 px-2.5 cursor-pointer">
+                                <i class="icon-add text-base text-primary ml-4 block group-[&.active]:hidden"></i>
+                                <i class="icon-minus text-base text-primary ml-4 hidden group-[&.active]:block"></i>
+                                فیلتربندی سایدبار: محدوده قیمت، فیلتر های برند، رنگ، نوع، جست و جو و نمایش براساس؟
+                            </div>
+                            <div class="subMenu pb-4 px-2.5" style="display: none">
+                                <p class="text-public mb-0">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                    متخصصان را می طلبد و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد.
+                                </p>
+                            </div>
+
+                        </li>
+                        <li class="group itemAccordion border-b-2 border-solid border-natural-alpha last:border-b-0">
+                            <div
+                                class="dropDownlink text-brown text-sm-plus font-bold flex items-center py-4 px-2.5 cursor-pointer">
+                                <i class="icon-add text-base text-primary ml-4 block group-[&.active]:hidden"></i>
+                                <i class="icon-minus text-base text-primary ml-4 hidden group-[&.active]:block"></i>
+                                فیلتربندی سایدبار: محدوده قیمت، فیلتر های برند، رنگ، نوع، جست و جو و نمایش براساس؟
+                            </div>
+                            <div class="subMenu pb-4 px-2.5" style="display: none">
+                                <p class="text-public mb-0">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                    متخصصان را می طلبد و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد.
+                                </p>
+                            </div>
+
+                        </li>
+                        <li class="group itemAccordion border-b-2 border-solid border-natural-alpha last:border-b-0">
+                            <div
+                                class="dropDownlink text-brown text-sm-plus font-bold flex items-center py-4 px-2.5 cursor-pointer">
+                                <i class="icon-add text-base text-primary ml-4 block group-[&.active]:hidden"></i>
+                                <i class="icon-minus text-base text-primary ml-4 hidden group-[&.active]:block"></i>
+                                فیلتربندی سایدبار: محدوده قیمت، فیلتر های برند، رنگ، نوع، جست و جو و نمایش براساس؟
+                            </div>
+                            <div class="subMenu pb-4 px-2.5" style="display: none">
+                                <p class="text-public mb-0">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                    متخصصان را می طلبد و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد.
+                                </p>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--END-FAQ-->
+
+    </main>
+    <!--END-MAIN-->
+
+    <!--START-FOOTER-->
+    <footer class="bg-white">
+        <div class="container py-9">
+            <div class="mb-7">
+                <div class="mb-4">
+                    <a href="" class="block mb-4">
+                        <img src="assets/img/logo.png" alt="" class="max-w-[130px] mx-auto">
+                    </a>
+                    <h2 class="text-base text-primary block font-semibold text-center">
+                        خرید انواع قهوه، اسپرسوساز و تنقلات!
+                    </h2>
+                </div>
+                <p class="text-public mb-0">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                    نیاز، و کاربردهای متنوع در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع. و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع.
+                </p>
+            </div>
+            <div class="p-4 border-2 border-solid border-natural-alpha rounded-lg mb-7">
+                <div class="header-section mb-4">
+                    <div class="header-section-title ml-auto">
+                        شعبه حضوری
+                    </div>
+                    <a href="" class="more-link-text more-link-text-brown ml-0">
+                        مشاهده سایر شعب
+                        <i class="icon-arrow-left"></i>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="icon-pin text-2xl text-primary ml-3 block"></i>
+                    <div class="text-xs-plus text-brown font-semibold">
+                        <span class="block text-brown-lighter font-medium mb-1">
+                            شعبه اصلی
+                        </span>
+                        تهران ، تقاطع جمهوری و حافظ ، بازار چارسو ، طبقه منفی یک ، واحد ۱۲
+                    </div>
+                </div>
+            </div>
+            <div class="mb-7">
+                <div class="header-section-title mb-2.5 ml-0 text-center">
+                    شبکه‌های اجتماعی
+                </div>
+                <ul class="flex items-center justify-center">
+                    <li class="ml-4 last:ml-0">
+                        <a href="" class="text-2xl text-brown-lighter block transition-all hover:text-primary">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="ml-4 last:ml-0">
+                        <a href="" class="text-2xl text-brown-lighter block transition-all hover:text-primary">
+                            <i class="icon-aparat"></i>
+                        </a>
+                    </li>
+                    <li class="ml-4 last:ml-0">
+                        <a href="" class="text-2xl text-brown-lighter block transition-all hover:text-primary">
+                            <i class="icon-telegram"></i>
+                        </a>
+                    </li>
+                    <li class="ml-4 last:ml-0">
+                        <a href="" class="text-2xl text-brown-lighter block transition-all hover:text-primary">
+                            <i class="icon-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="ml-4 last:ml-0">
+                        <a href="" class="text-2xl text-brown-lighter block transition-all hover:text-primary">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-fit mx-auto mb-4 py-3 px-4 border-2 border-solid border-natural-alpha rounded-full flex items-center">
+                <span class="text-sm text-brown font-medium ml-3">
+                    تلفن پشتیبانی
+                </span>
+                <b class="text-sm text-primary font-bold ml-3">
+                    ۰۲۱-۴۵۶۷
+                </b>
+                <i class="icon-phone-call text-xl text-primary"></i>
+            </div>
+            <p class="text-sm text-brown block text-center mb-7">
+                پشتیبانی تلفنی، پاسخ‌گویی همه‌ روزه به جز ایام تعطیل
+            </p>
+            <ul class="flex flex-wrap justify-center -m-1.5 mb-5">
+                <li class="p-1.5">
+                    <a href="" class="block">
+                        <img src="assets/img/n-1.png" alt="" class="w-20 h-20 object-contain object-center">
+                    </a>
+                </li>
+                <li class="p-1.5">
+                    <a href="" class="block">
+                        <img src="assets/img/n-2.png" alt="" class="w-20 h-20 object-contain object-center">
+                    </a>
+                </li>
+                <li class="p-1.5">
+                    <a href="" class="block">
+                        <img src="assets/img/n-3.png" alt="" class="w-20 h-20 object-contain object-center">
+                    </a>
+                </li>
+                <li class="p-1.5">
+                    <a href="" class="block">
+                        <img src="assets/img/n-4.png" alt="" class="w-20 h-20 object-contain object-center">
+                    </a>
+                </li>
+            </ul>
+            <a class="go-up bg-natural rounded-xl w-12 h-12 flex items-center justify-center mx-auto mb-2">
+                <i class="icon-arrow-up text-md text-primary"></i>
+            </a>
+            <p class="text-sm text-brown text-center px-8">
+                تمامی حقوق متعلق به مجموعه‌ی دکتر کافی است
+                دکتر کافی ۱۴۰۱ - ۱۴۰۲
+            </p>
+        </div>
+    </footer>
+    <!--END-FOOTER-->
+
+
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/noUi/nouislider.min.js"></script>
+    <script src="assets/js/public.js"></script>
+    <script src="assets/js/product-list.js"></script>
+</body>
+
+</html>

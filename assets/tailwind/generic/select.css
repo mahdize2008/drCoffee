@@ -1,0 +1,36 @@
+.select-wrapper .select2 {
+    @apply !h-[52px] !w-full
+}
+.select-wrapper .select2 .selection ,
+.select-wrapper .select2 .select2-selection {
+    @apply w-full h-full
+}
+.select-wrapper .select2 .select2-selection {
+    @apply w-full h-full rounded-xl border-[1.5px] border-solid border-natural-alpha shadow-none flex items-center relative
+}
+.select-wrapper .select2 .select2-selection:after {
+    @apply content-["\e920"] font-["icomoon"] absolute top-1/2 left-4 -translate-y-1/2 text-brown-lighter text-xs
+}
+.select-wrapper .select2 .select2-selection .select2-selection__rendered {
+    @apply text-sm-plus font-medium text-brown px-4
+}
+.select-wrapper .select2-selection__arrow {
+    @apply !hidden
+}
+
+.select-wrapper-modern .select2,
+.select-wrapper-modern .select2 .selection {
+    @apply !flex !w-fit
+}
+.select-wrapper-modern .select2 .select2-selection .select2-selection__rendered {
+    @apply px-0 text-sm-plus text-brown
+}
+.select-wrapper-modern .select2 .select2-selection {
+    @apply !border-0 flex items-center justify-center !w-fit
+}
+.select-wrapper-modern .select2-selection__arrow {
+    @apply !hidden
+}
+.select-wrapper-modern .select2 .select2-selection:after {
+    @apply content-["\e920"] font-["icomoon"] text-primary font-bold text-2xs px-2 block relative
+}

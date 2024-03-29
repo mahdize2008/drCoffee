@@ -1,0 +1,18 @@
+.input-container .input {
+    @apply h-12 w-full outline-0 border-none shadow-none text-sm
+    rounded-md bg-natural px-4 text-brown placeholder-brown-light
+}
+.input-container .input.input-round {
+    @apply rounded-full
+}
+
+.input-container.input-container-bg-none .input {
+    @apply bg-white
+}
+
+input[type="radio"].sort-filter:checked + label{
+    @apply text-primary font-bold
+}
+input[type="radio"].sort-filter:checked + label i{
+    @apply block
+}

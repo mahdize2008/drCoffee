@@ -1,0 +1,101 @@
+.btn {
+    @apply flex items-center justify-center xs:px-4 px-2.5 xs:h-12 h-[42px] rounded-xl font-bold xs:text-sm text-xs relative transition-all cursor-pointer
+}
+.btn i {
+    @apply xs:text-lg text-md mr-2
+}
+.btn i.reverse-margin-icon {
+    @apply ml-2 mr-0
+}
+.btn i.down-icon {
+    @apply text-xs text-brown-light
+}
+.btn i.icon-arrow-left {
+    @apply text-sm
+}
+
+
+/* BTN SM */
+.btn.btn-sm {
+    @apply h-10 text-sm
+}
+
+/* BTN SM */
+.btn.btn-xs {
+    @apply h-8 text-xs
+}
+
+/* BTN ROUND */
+.btn.btn-round {
+    @apply rounded-full
+}
+
+/* BTN SQ */
+.btn.btn-sq {
+    @apply p-0 xs:w-12 w-[42px]
+}
+.btn.btn-sq i {
+    @apply m-0 text-base
+}
+.btn.btn-sq.btn-sm {
+    @apply w-10
+}
+.btn.btn-sq.btn-sm.btn-sq-swiper-nav i {
+    @apply text-xs
+}
+.btn.btn-sq.btn-xs {
+    @apply w-8
+}
+.btn.btn-sq.btn-xs i {
+    @apply text-xs
+}
+
+/* btn outline natural */
+.btn.btn-outline-natural {
+    @apply border-2 border-solid border-natural-alpha
+    text-brown hover:bg-natural hover:border-natural
+}
+
+/* btn brown lightness */
+.btn.btn-brown-lightness {
+    @apply text-brown bg-natural-beta hover:bg-primary hover:text-white
+}
+.btn.btn-brown-lightness.active {
+    @apply bg-primary text-white
+}
+
+/* BTN PRIMARY */
+.btn.btn-primary {
+    @apply bg-primary text-white hover:bg-secondary
+}
+
+/* NATURAL LIGHTNESS */
+.btn.btn-natural-lightness {
+    @apply bg-natural text-primary hover:bg-primary hover:text-white
+}
+
+/* btn-natural-brown-lightness */
+.btn.btn-natural-brown-lightness {
+    @apply bg-natural text-brown hover:bg-primary hover:text-white
+}
+.btn.btn-natural-brown-lightness.active {
+    @apply bg-primary text-white
+}
+
+/* btn-natural-brown-lightness */
+.btn.btn-outline-primary-natural {
+    @apply border-2 border-solid border-natural-alpha
+    text-primary hover:bg-natural hover:border-natural
+}
+
+/**/
+
+.btn.btn-white-lightness {
+    @apply bg-white bg-opacity-[0.15] text-white transition-all hover:bg-opacity-30
+}
+
+.btn-number-cart {
+    @apply w-[23px] h-[23px] text-primary-dark text-xs leading-[1]
+    bg-secondary border border-2 border-solid border-white rounded-full flex items-center justify-center
+    absolute top-0 right-0 transform -translate-y-1/2 translate-x-1/2
+}

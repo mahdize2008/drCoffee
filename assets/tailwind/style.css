@@ -1,0 +1,110 @@
+/* GENERIC */
+@import "generic/font.css";
+@import "generic/font-icon.css";
+@import "generic/btn.css";
+@import "generic/header-section.css";
+@import "generic/text-public.css";
+@import "generic/more-link-text.css";
+@import "generic/social-box.css";
+@import "generic/form-elements.css";
+@import "generic/label-check.css";
+@import "generic/range-price.css";
+@import "generic/range-rate.css";
+@import "generic/select.css";
+@import "generic/form-group.css";
+@import "generic/alert-public.css";
+@import "generic/backdrop.css";
+@import "generic/late-art.css";
+
+/* SECTIONS */
+@import "sections/header.css";
+@import "sections/special-products.css";
+@import "sections/products.css";
+@import "sections/menu.css";
+@import "sections/bread-crumb.css";
+@import "sections/content-editor.css";
+@import "sections/about-us.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    html , body  {
+        @apply font-["iranSansX"] overflow-x-clip text-right;
+        direction: rtl;
+    }
+    button {
+        @apply cursor-pointer
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .swiper-button-disabled {
+        @apply !opacity-40 !pointer-events-none
+    }
+
+    .container{
+        @apply max-sm:!max-w-full
+    }
+}
+
+@layer components {
+    .container-sm {
+        @apply max-w-[800px] mx-auto
+    }
+    .main-gradient-bg {
+        @apply relative ;
+        background-image: linear-gradient(to top, rgba(176, 157, 151, 0.08) 0px, rgba(176, 157, 151, 0) 1000px);
+    }
+    .main-gradient-bg:before {
+        @apply content-[""] absolute top-0 right-0 w-full h-96 transform -scale-y-100 -z-[1];
+        background-image: radial-gradient(43.34% 40.05% at 50.00% 100.00%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);
+    }
+
+
+    .shopping-steps-body .main-gradient-bg {
+        @apply !bg-none
+    }
+
+
+
+
+
+
+
+    .py-between-section {
+        @apply py-7
+    }
+    .pb-between-section {
+        @apply pb-7
+    }
+    .pt-between-section {
+        @apply pt-7
+    }
+    .my-between-section {
+        @apply my-7
+    }
+    .mb-between-section {
+        @apply mb-7
+    }
+    .mt-between-section {
+        @apply mt-7
+    }
+}
+
+
+
+
+
+
+

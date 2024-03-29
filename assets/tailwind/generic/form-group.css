@@ -1,0 +1,63 @@
+.form-group-label {
+    @apply text-sm-plus font-bold block text-brown mb-2.5
+}
+
+.form-group-wrapper input , .form-group-wrapper textarea {
+    @apply bg-natural w-full block h-12 rounded-full px-4 text-sm text-brown placeholder-brown font-medium border-[1.5px] border-solid border-transparent
+    !shadow-none !outline-0 transition-all
+}
+.form-group-wrapper.form-group-wrapper-error input , .form-group-wrapper.form-group-wrapper-error textarea {
+    @apply !border-danger-alpha !bg-white
+}
+.form-group-wrapper input:focus , .form-group-wrapper textarea:focus {
+    @apply bg-white !border-secondary
+}
+
+.form-group-wrapper textarea {
+    @apply p-4 h-[300px] rounded-xl
+}
+.form-group-wrapper.small-theme textarea {
+    @apply p-3 h-[80px] rounded-lg
+}
+
+
+
+
+
+.form-group-wrapper .select2 {
+    @apply !h-12 !w-full
+}
+.form-group-wrapper .select2 .selection ,
+.form-group-wrapper .select2 .select2-selection {
+    @apply w-full h-full
+}
+.form-group-wrapper .select2 .select2-selection {
+    @apply w-full h-full !rounded-full border-none bg-natural shadow-none flex items-center relative
+}
+.form-group-wrapper .select2 .select2-selection:after {
+    @apply content-["\e920"] font-["icomoon"] absolute top-1/2 left-4 -translate-y-1/2 text-brown-lighter text-xs
+}
+.form-group-wrapper .select2 .select2-selection .select2-selection__rendered {
+    @apply text-sm-plus font-medium text-brown px-4
+}
+.form-group-wrapper .select2-selection__arrow {
+    @apply !hidden
+}
+
+
+
+
+
+
+.form-group-toggle-type {
+    @apply absolute top-1/2 left-4 -translate-y-1/2 text-lg text-brown cursor-pointer
+}
+.form-group-toggle-type i {
+    @apply relative
+}
+.form-group-toggle-type i:after {
+    @apply content-[""] absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 h-0.5 w-full bg-brown -rotate-[45deg] opacity-0
+}
+.form-group-toggle-type i.has-line:after {
+    @apply opacity-70
+}

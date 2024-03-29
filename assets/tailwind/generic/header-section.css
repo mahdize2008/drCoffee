@@ -1,0 +1,25 @@
+.header-section {
+    @apply flex items-center
+}
+.header-section-shape {
+    @apply w-6 h-6 ml-3
+}
+.header-section-icon {
+    @apply text-2xl text-primary ml-3
+}
+.header-section-icon.header-section-icon-small {
+    @apply text-lg
+}
+.header-section-title {
+    @apply text-base-plus font-bold text-brown !ml-auto
+}
+.header-section-title-primary {
+    @apply text-primary
+}
+.header-section-subtitle {
+    @apply text-sm text-brown-lighter font-medium
+}
+.header-section-title-icon {
+    @apply text-xl text-primary ml-2.5
+}
+

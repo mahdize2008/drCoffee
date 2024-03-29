@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/noUi/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="backdrop" style="display: none;"></div>
+        <div class="backdrop-2" style="display: none;"></div>
+
+
+        <!--START-order-details-false-catch-MODAL-->
+        <div class="fixed w-full h-full top-0 z-[90] overflow-y-auto bg-white">
+            <div class="border-b-2 border-natural-alpha p-3"
+                style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+                <div class="md:container text-brown text-md font-semibold flex items-center">
+                    <a href="#"
+                        class="ml-4 w-12 h-12 flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    جزئیات سفارش ۳۲۷۸۵۰
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="text-md text-brown font-bold block mb-5">
+                    آخرین وضعیت سفارش
+                </div>
+                <div class="text-base font-bold text-primary flex flex-wrap items-center ml-auto mb-5">
+                    <img src="assets/img/circles-danger.png" alt="" class="ml-2 w-6 h-6" />
+                    پرداخت ناموفق
+                    <span class="text-sm text-primary font-medium w-full mt-2">
+                        به مدت نیم‌ساعت مهلت پرداخت مجدد برای شما در نظر گرفته شده‌است
+                    </span>
+                </div>
+
+                <div class="">
+                    <ul class="flex items-center whitespace-nowrap -mx-3 px-3 overflow-x-auto mb-10">
+                        <li class="ml-6 last:ml-0 text-sm flex flex-col items-center font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61"
+                                fill="none">
+                                <g clip-path="url(#clip0_624_5210)">
+                                    <path
+                                        d="M48.8008 60.4506H11.3008C8.3171 60.4506 5.45561 59.2653 3.34583 57.1555C1.23605 55.0457 0.0507813 52.1842 0.0507813 49.2006L0.0507812 11.7006C0.0507813 8.71687 1.23605 5.85539 3.34583 3.7456C5.45561 1.63582 8.3171 0.450554 11.3008 0.450554L48.8008 0.450554C51.7845 0.450554 54.646 1.63582 56.7557 3.7456C58.8655 5.85539 60.0508 8.71687 60.0508 11.7006V49.2006C60.0508 52.1842 58.8655 55.0457 56.7557 57.1555C54.646 59.2653 51.7845 60.4506 48.8008 60.4506Z"
+                                        fill="#F4F1F0"></path>
+                                    <path
+                                        d="M36.9252 29.2018C32.4458 29.2018 28.8008 32.8468 28.8008 37.3261C28.8008 41.8055 32.4458 45.4505 36.9252 45.4505C41.4045 45.4505 45.0495 41.8074 45.0495 37.328C45.0495 32.8486 41.4045 29.2018 36.9252 29.2018ZM40.1652 40.7143C40.0901 40.8122 39.9963 40.8943 39.8892 40.9557C39.7822 41.0171 39.664 41.0566 39.5415 41.0719C39.4191 41.0873 39.2948 41.0782 39.1759 41.0451C39.057 41.012 38.9458 40.9557 38.8489 40.8793L36.0364 38.6912C35.9236 38.6039 35.8323 38.4919 35.7695 38.3639C35.7068 38.2358 35.6743 38.095 35.6745 37.9524V33.8893C35.6745 33.6406 35.7733 33.4022 35.9491 33.2264C36.1249 33.0505 36.3634 32.9518 36.612 32.9518C36.8607 32.9518 37.0991 33.0505 37.2749 33.2264C37.4508 33.4022 37.5495 33.6406 37.5495 33.8893V37.493L40.0002 39.3999C40.1962 39.5524 40.3236 39.7765 40.3545 40.023C40.3855 40.2694 40.3174 40.518 40.1652 40.7143Z"
+                                        fill="#B09D97"></path>
+                                    <path
+                                        d="M31.8508 17.4399L20.5014 23.1643L15.9883 20.9762L27.1389 15.5518C27.2652 15.4897 27.4041 15.4575 27.5448 15.4575C27.6856 15.4575 27.8245 15.4897 27.9508 15.5518L31.8508 17.4399ZM39.1127 20.9762L27.5627 26.6143L23.2389 24.5143L22.6127 24.2012L33.9752 18.4768L34.6014 18.7899L39.1127 20.9762ZM26.6252 34.7012C26.1949 36.4171 26.1949 38.2127 26.6252 39.9287V40.1031L15.5627 34.4162C15.4095 34.3358 15.281 34.2154 15.1909 34.0678C15.1008 33.9203 15.0523 33.751 15.0508 33.5781V22.6037L19.7383 24.8781V28.8774C19.7383 29.3893 20.1639 29.8149 20.6758 29.8149C21.1877 29.8149 21.6133 29.3893 21.6133 28.8774V25.8024L22.2377 26.1024L26.6383 28.2399L26.6252 34.7012ZM40.0633 27.1768C39.0481 26.8592 37.9901 26.6992 36.9264 26.7024C35.2995 26.7011 33.6942 27.0748 32.2352 27.7944C30.7761 28.514 29.5025 29.5602 28.5133 30.8518V28.2268L40.0502 22.6149C40.0633 23.6649 40.0633 25.7143 40.0633 27.1768Z"
+                                        fill="#B09D97"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_624_5210">
+                                        <rect width="60" height="60" fill="white"
+                                            transform="translate(0.0507812 0.450554)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-brown-lighter mt-3">در انتظار تایید</div>
+                        </li>
+                        <li class="ml-6 last:ml-0 text-sm flex flex-col items-center font-medium active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="62" height="61" viewBox="0 0 62 61"
+                                fill="none">
+                                <g clip-path="url(#clip0_624_5202)">
+                                    <path
+                                        d="M50.0073 60.8301H12.0329C9.01151 60.8301 6.11383 59.6298 3.97736 57.4933C1.84088 55.3569 0.640625 52.4592 0.640625 49.4377L0.640625 11.4634C0.640625 8.44193 1.84088 5.54425 3.97736 3.40778C6.11383 1.2713 9.01151 0.0710449 12.0329 0.0710449L50.0073 0.0710449C53.0288 0.0710449 55.9264 1.2713 58.0629 3.40778C60.1994 5.54425 61.3996 8.44193 61.3996 11.4634V49.4377C61.3996 52.4592 60.1994 55.3569 58.0629 57.4933C55.9264 59.6298 53.0288 60.8301 50.0073 60.8301Z"
+                                        fill="#F4F1F0" />
+                                    <path
+                                        d="M44.6232 36.4563C44.3714 36.4563 44.1299 36.5563 43.9519 36.7344C43.7739 36.9124 43.6738 37.1539 43.6738 37.4057C43.6738 40.5462 41.1182 43.1018 37.9777 43.1018C34.8372 43.1018 32.2815 40.5462 32.2815 37.4057C32.2815 34.2652 34.8372 31.7095 37.9777 31.7095C39.2916 31.7095 40.5429 32.1709 41.5359 32.976H40.1916C39.9398 32.976 39.6983 33.076 39.5203 33.254C39.3423 33.4321 39.2422 33.6735 39.2422 33.9253C39.2422 34.1771 39.3423 34.4186 39.5203 34.5966C39.6983 34.7747 39.9398 34.8747 40.1916 34.8747H43.3568C43.6085 34.8747 43.85 34.7747 44.0281 34.5966C44.2061 34.4186 44.3061 34.1771 44.3061 33.9253V30.7602C44.3061 30.5084 44.2061 30.2669 44.0281 30.0889C43.85 29.9108 43.6085 29.8108 43.3568 29.8108C43.105 29.8108 42.8635 29.9108 42.6855 30.0889C42.5074 30.2669 42.4074 30.5084 42.4074 30.7602V31.2557C41.12 30.3193 39.5696 29.8136 37.9777 29.8108C33.7891 29.8108 30.3828 33.2171 30.3828 37.4057C30.3828 41.5942 33.7891 45.0005 37.9777 45.0005C42.1663 45.0005 45.5726 41.5942 45.5726 37.4057C45.5726 37.1539 45.4725 36.9124 45.2945 36.7344C45.1165 36.5563 44.875 36.4563 44.6232 36.4563Z"
+                                        fill="#B09D97" />
+                                    <path
+                                        d="M27.4991 15.255L21.3473 15.2797C20.5498 15.2797 19.8036 15.7221 19.4239 16.4189L16.2093 22.2423L26.8801 22.2176L27.4991 15.255ZM40.7389 22.191L37.4864 16.3676C37.2938 16.0229 37.0129 15.7356 36.6725 15.5354C36.3322 15.3351 35.9446 15.2292 35.5497 15.2284L29.3978 15.2531L30.0434 22.2157L40.7389 22.191ZM41.1452 27.1144C39.2744 26.5403 37.2824 26.4871 35.3836 26.9603C33.4847 27.4336 31.7508 28.4155 30.3682 29.8004C28.9856 31.1854 28.0066 32.921 27.5366 34.8206C27.0665 36.7203 27.1232 38.7121 27.7004 40.582L17.865 40.6067H17.8517C17.3236 40.6032 16.8183 40.391 16.4459 40.0165C16.0735 39.642 15.8643 39.1355 15.8638 38.6073L15.8125 24.1391L27.5219 24.1144H29.4206L41.13 24.0764L41.1452 27.1144Z"
+                                        fill="#B09D97" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_624_5202">
+                                        <rect width="60.759" height="60.759" fill="white"
+                                            transform="translate(0.640625 0.0710449)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-brown-lighter mt-3">درحال پردازش</div>
+                        </li>
+                        <li class="ml-6 last:ml-0 text-sm flex flex-col items-center font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61"
+                                fill="none">
+                                <g clip-path="url(#clip0_624_5192)">
+                                    <path
+                                        d="M48.7422 60.4506H11.2422C8.2585 60.4506 5.39702 59.2653 3.28724 57.1555C1.17745 55.0457 -0.0078125 52.1842 -0.0078125 49.2006L-0.0078125 11.7006C-0.0078125 8.71687 1.17745 5.85539 3.28724 3.7456C5.39702 1.63582 8.2585 0.450554 11.2422 0.450554L48.7422 0.450554C51.7259 0.450554 54.5874 1.63582 56.6971 3.7456C58.8069 5.85539 59.9922 8.71687 59.9922 11.7006V49.2006C59.9922 52.1842 58.8069 55.0457 56.6971 57.1555C54.5874 59.2653 51.7259 60.4506 48.7422 60.4506Z"
+                                        fill="#F4F1F0" />
+                                    <path
+                                        d="M18.7422 44.1999C18.5082 44.2001 18.2827 44.1124 18.1103 43.9543C17.9828 43.8399 14.9922 41.0743 14.9922 38.1849C14.9922 35.9874 16.6741 34.2006 18.7422 34.2006C20.8103 34.2006 22.4922 35.9874 22.4922 38.1849C22.4922 41.0743 19.5016 43.8399 19.3741 43.9543C19.202 44.1131 18.9763 44.2008 18.7422 44.1999Z"
+                                        fill="#B09D97" />
+                                    <path
+                                        d="M34.5597 45.4505H18.7422C18.4935 45.4505 18.2551 45.3518 18.0793 45.176C17.9035 45.0001 17.8047 44.7617 17.8047 44.513C17.8047 44.2644 17.9035 44.0259 18.0793 43.8501C18.2551 43.6743 18.4935 43.5755 18.7422 43.5755H34.5597C34.7359 43.5755 34.8166 43.4668 34.8522 43.3749C34.8878 43.283 34.9009 43.1499 34.7697 43.0318L26.4559 35.5093C25.7809 34.898 25.5541 33.9549 25.8822 33.1037C26.2103 32.2524 27.0109 31.7012 27.9241 31.7012H38.7428C38.9915 31.7012 39.2299 31.7999 39.4057 31.9758C39.5815 32.1516 39.6803 32.39 39.6803 32.6387C39.6803 32.8873 39.5815 33.1258 39.4057 33.3016C39.2299 33.4774 38.9915 33.5762 38.7428 33.5762H27.9241C27.7478 33.5762 27.6672 33.6849 27.6316 33.7768C27.5959 33.8687 27.5828 34.0018 27.7141 34.1199L36.0278 41.6424C36.7028 42.2537 36.9297 43.1968 36.6016 44.048C36.2734 44.8993 35.4728 45.4505 34.5597 45.4505Z"
+                                        fill="#B09D97" />
+                                    <path
+                                        d="M38.7455 15.4506C35.2992 15.4506 32.4961 18.2893 32.4961 21.7787C32.4961 26.5937 37.9055 31.2774 38.1361 31.4762C38.3054 31.6225 38.5217 31.703 38.7455 31.703C38.9692 31.703 39.1855 31.6225 39.3548 31.4762C39.5855 31.2774 44.9948 26.5937 44.9948 21.7787C44.9948 18.2893 42.1917 15.4506 38.7455 15.4506ZM38.7455 24.2012C37.3673 24.2012 36.2461 23.0799 36.2461 21.7018C36.2461 20.3237 37.3673 19.2024 38.7455 19.2024C39.4083 19.2024 40.0441 19.4658 40.5128 19.9345C40.9815 20.4032 41.2448 21.0389 41.2448 21.7018C41.2448 22.3647 40.9815 23.0004 40.5128 23.4691C40.0441 23.9379 39.4083 24.2012 38.7455 24.2012Z"
+                                        fill="#B09D97" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_624_5192">
+                                        <rect width="60" height="60" fill="white"
+                                            transform="translate(-0.0078125 0.450554)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-brown-lighter mt-3">ارسال شده</div>
+                        </li>
+                        <li class="ml-6 last:ml-0 text-sm flex flex-col items-center font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="62" height="61" viewBox="0 0 62 61"
+                                fill="none">
+                                <g clip-path="url(#clip0_624_5184)">
+                                    <path
+                                        d="M49.9526 60.8301H11.9783C8.95682 60.8301 6.05914 59.6298 3.92267 57.4933C1.7862 55.3569 0.585938 52.4592 0.585938 49.4377L0.585938 11.4634C0.585938 8.44193 1.7862 5.54425 3.92267 3.40778C6.05914 1.2713 8.95682 0.0710449 11.9783 0.0710449L49.9526 0.0710449C52.9741 0.0710449 55.8717 1.2713 58.0082 3.40778C60.1447 5.54425 61.345 8.44193 61.345 11.4634V49.4377C61.345 52.4592 60.1447 55.3569 58.0082 57.4933C55.8717 59.6298 52.9741 60.8301 49.9526 60.8301Z"
+                                        fill="#F4F1F0" />
+                                    <path
+                                        d="M37.9225 29.1782C33.3864 29.1782 29.6953 32.8693 29.6953 37.4054C29.6953 41.9414 33.3864 45.6325 37.9225 45.6325C42.4585 45.6325 46.1496 41.9414 46.1496 37.4054C46.1496 32.8693 42.4585 29.1782 37.9225 29.1782ZM42.8973 35.6141L37.5183 40.678C37.3434 40.8376 37.1152 40.926 36.8784 40.926C36.6416 40.926 36.4134 40.8376 36.2385 40.678L32.7582 37.5128C32.5719 37.3434 32.4605 37.1068 32.4486 36.8553C32.4366 36.6037 32.5251 36.3577 32.6946 36.1714C32.864 35.985 33.1006 35.8737 33.3521 35.8617C33.6037 35.8498 33.8497 35.9383 34.036 36.1078L36.8784 38.6919L41.6195 34.209C41.8058 34.0396 42.0518 33.9511 42.3034 33.963C42.555 33.975 42.7915 34.0863 42.9609 34.2727C43.1304 34.459 43.2189 34.705 43.207 34.9565C43.195 35.2081 43.0837 35.4446 42.8973 35.6141Z"
+                                        fill="#B09D97" />
+                                    <path
+                                        d="M27.4444 15.255L21.2926 15.2797C20.4951 15.2797 19.7489 15.7221 19.3692 16.4189L16.1546 22.2423L26.8254 22.2176L27.4444 15.255ZM40.6842 22.191L37.4317 16.3676C37.2391 16.0229 36.9582 15.7356 36.6178 15.5354C36.2775 15.3351 35.8899 15.2292 35.495 15.2284L29.3431 15.2531L29.9887 22.2157L40.6842 22.191ZM41.0905 27.1144C39.2197 26.5403 37.2277 26.4871 35.3289 26.9603C33.43 27.4336 31.6961 28.4155 30.3135 29.8004C28.9309 31.1854 27.9519 32.921 27.4819 34.8206C27.0118 36.7203 27.0685 38.7121 27.6457 40.582L17.8103 40.6067H17.797C17.2689 40.6032 16.7636 40.391 16.3912 40.0165C16.0188 39.642 15.8096 39.1355 15.8091 38.6073L15.7578 24.1391L27.4672 24.1144H29.3659L41.0753 24.0764L41.0905 27.1144Z"
+                                        fill="#B09D97" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_624_5184">
+                                        <rect width="60.759" height="60.759" fill="white"
+                                            transform="translate(0.585938 0.0710449)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="text-brown-lighter mt-3">تکمیل شده</div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class=" mb-8">
+                    <div class="text-base font-bold block text-brown mb-6">
+                        اطلاعات پرداخت
+                    </div>
+                    <div>
+                        <div class="text-base text-danger font-bold block text-center mb-1">
+                            پرداخت ناموفق
+                        </div>
+                        <div class="text-sm text-brown-lighter block text-center mb-6">
+                            جهت تکمیل سفارش، پرداخت را تکمیل نمایید
+                        </div>
+                        <a href="" class="btn btn-primary px-7 mx-auto mb-6 w-fit">
+                            پرداخت مجدد
+                        </a>
+                        <div class="text-xs text-brown-lighter flex items-center mt-4 px-6">
+                            <i class="icon-information text-xl text-brown ml-2.5"></i>
+                            چنانچه مبلغ سفارش از حساب شما کسر شده، مبلغ طی ۲۴ الی ۴۸
+                            ساعت به حساب شما مرجوع خواهد شد.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mb-8">
+                    <div class="mb-10">
+                        <div class="text-base font-bold block text-brown mb-5">
+                            اطلاعات سفارش
+                        </div>
+                        <ul class="-my-3.5">
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                کد پیگیری
+                                <b class="font-bold">
+                                    ۳۲۴۵۳۶۴
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                تاریخ ثبت
+                                <b class="font-bold">
+                                    ۱۲ بهمن ۱۳۷۷
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                نام و نام خانوادگی گیرنده
+                                <b class="font-bold">
+                                    امیرحسین صفری
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                شماره موبایل گیرنده
+                                <b class="font-bold">
+                                    ۰۹۱۸۷۵۲۹۲۸۶
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                روش ارسال
+                                <b class="font-bold">
+                                    ارسال پستی
+                                </b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="text-base font-bold block text-brown mb-5">
+                            اطلاعات پرداخت
+                        </div>
+                        <ul class="-my-3.5">
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                وضعیت پرداخت
+                                <b class="font-bold text-success">
+                                    پرداخت موفق
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                مبلغ سفارش
+                                <b class="font-bold">
+                                    ۳۰۰,۰۰۰ تومان
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                هزینه ارسال
+                                <b class="font-bold">
+                                    ۲۵,۰۰۰ تومان
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                تاریخ و ساعت پرداخت
+                                <b class="font-bold">
+                                    ۱۴۰۱/۱۱/۱۲ - ۲۳:۳۰
+                                </b>
+                            </li>
+                            <li
+                                class="text-sm-plus text-brown font-medium flex items-center justify-between py-3.5 border-b-[1.5px] border-solid border-natural last:border-b-0">
+                                درگاه پرداخت
+                                <b class="font-bold">
+                                    زرین‌پال
+                                </b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="header-section mb-5">
+                        <i class="icon-shopping-bag header-section-icon"></i>
+
+                        <div class="header-section-title !ml-4">
+                            لیست محصولات
+                        </div>
+                        <div class="header-section-subtitle">
+                            ۳ محصول
+                        </div>
+                    </div>
+                    <ul>
+                        <li
+                            class="pb-6 last:pb-0 mb-6 last:mb-0 border-b-[1.5px] border-solid border-natural-alpha last:border-b-0">
+                            <a href="" class="group">
+                                <div class="flex mb-3">
+                                    <img src="assets/img/p-1.png" alt="" class="w-[110px] h-[110px] ml-5">
+                                    <div class="flex justify-between flex-col">
+                                        <div
+                                            class="text-base text-brown font-bold block mb-2 line-clamp-3 transition-all group-hover:text-primary">
+                                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم...
+                                        </div>
+                                        <div class="text-md text-primary flex items-center">
+                                            ۵,۵۰۰,۰۰۰
+                                            <span class="text-sm mr-1">
+                                                تومان
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="flex items-center flex-wrap w-full -mb-2">
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <i class="icon-shield text-primary text-lg ml-1.5"></i>
+                                        گارانتی تست و تعویض (۵۰۰,۰۰۰ تومان)
+                                    </li>
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <i class="icon-cube text-primary text-lg ml-1.5"></i>
+                                        بسته ۵۰۰ گرمی
+                                    </li>
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <div class="w-2 h-2 rounded-full block ml-2"
+                                            style="background-color: rgba(255,170,34,1);"></div>
+                                        زرد
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </li>
+                        <li
+                            class="pb-6 last:pb-0 mb-6 last:mb-0 border-b-[1.5px] border-solid border-natural-alpha last:border-b-0">
+                            <a href="" class="group">
+                                <div class="flex mb-3">
+                                    <img src="assets/img/p-1.png" alt="" class="w-[110px] h-[110px] ml-5">
+                                    <div class="flex justify-between flex-col">
+                                        <div
+                                            class="text-base text-brown font-bold block mb-2 line-clamp-3 transition-all group-hover:text-primary">
+                                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم...
+                                        </div>
+                                        <div class="text-md text-primary flex items-center">
+                                            ۵,۵۰۰,۰۰۰
+                                            <span class="text-sm mr-1">
+                                                تومان
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="flex items-center flex-wrap w-full -mb-2">
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <i class="icon-shield text-primary text-lg ml-1.5"></i>
+                                        گارانتی تست و تعویض (۵۰۰,۰۰۰ تومان)
+                                    </li>
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <i class="icon-cube text-primary text-lg ml-1.5"></i>
+                                        بسته ۵۰۰ گرمی
+                                    </li>
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <div class="w-2 h-2 rounded-full block ml-2"
+                                            style="background-color: rgba(255,170,34,1);"></div>
+                                        زرد
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </li>
+                        <li
+                            class="pb-6 last:pb-0 mb-6 last:mb-0 border-b-[1.5px] border-solid border-natural-alpha last:border-b-0">
+                            <a href="" class="group">
+                                <div class="flex mb-3">
+                                    <img src="assets/img/p-1.png" alt="" class="w-[110px] h-[110px] ml-5">
+                                    <div class="flex justify-between flex-col">
+                                        <div
+                                            class="text-base text-brown font-bold block mb-2 line-clamp-3 transition-all group-hover:text-primary">
+                                            لورم ایپسوم اسپرسو ساز برند نسپرسو مدل لورم ایپسوم...
+                                        </div>
+                                        <div class="text-md text-primary flex items-center">
+                                            ۵,۵۰۰,۰۰۰
+                                            <span class="text-sm mr-1">
+                                                تومان
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="flex items-center flex-wrap w-full -mb-2">
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <i class="icon-shield text-primary text-lg ml-1.5"></i>
+                                        گارانتی تست و تعویض (۵۰۰,۰۰۰ تومان)
+                                    </li>
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <i class="icon-cube text-primary text-lg ml-1.5"></i>
+                                        بسته ۵۰۰ گرمی
+                                    </li>
+                                    <li
+                                        class="text-sm text-brown font-medium py-2 px-2.5 ml-2 mb-2 last:ml-0 flex items-center border-[1.5px] border-solid border-natural-alpha rounded-lg">
+                                        <div class="w-2 h-2 rounded-full block ml-2"
+                                            style="background-color: rgba(255,170,34,1);"></div>
+                                        زرد
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="w-full flex items-center justify-center mt-10">
+                        <a href="" class="btn btn-round btn-sm btn-brown-lightness btn-sq btn-sq-swiper-nav">
+                            <i class="icon-right"></i>
+                        </a>
+                        <ul class="mx-2 rounded-full bg-natural flex items-center px-2">
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold xs:w-10 w-9 xs:h-10 h-9 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold xs:w-10 w-9 xs:h-10 h-9 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="active text-base text-brown font-bold xs:w-10 w-9 xs:h-10 h-9 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    3
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold xs:w-10 w-9 xs:h-10 h-9 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    ...
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="text-base text-brown font-bold xs:w-10 w-9 xs:h-10 h-9 rounded-full flex items-center justify-center [&.active]:bg-primary [&.active]:text-white">
+                                    15
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn-round btn-sm btn-brown-lightness btn-sq btn-sq-swiper-nav">
+                            <i class="icon-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END-order-details-false-catch-MODAL-->
+
+
+
+    </main>
+    <!--END-MAIN-->
+
+
+
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/noUi/nouislider.min.js"></script>
+    <script src="assets/js/public.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

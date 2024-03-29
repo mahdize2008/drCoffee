@@ -1,0 +1,51 @@
+.special-discount-vector-circle-1,
+.special-discount-vector-circle-2,
+.special-discount-vector-circle-3 {
+    @apply absolute top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2 rounded-full block
+}
+
+.special-discount-vector-circle-1 {
+    @apply w-[75px] h-[75px];
+    border: 3.371px solid rgba(255, 170, 34, 0.60);
+}
+
+.special-discount-vector-circle-2 {
+    @apply w-[105px] h-[105px];
+    border: 2.971px solid rgba(255, 170, 34, 0.50);
+}
+
+.special-discount-vector-circle-3 {
+    @apply w-[134px] h-[134px];
+    border: 2.247px solid rgba(255, 170, 34, 0.30);
+}
+
+
+/* .special-discount-vector-circle-1 {
+    @apply w-[44px] h-[44px];
+    border: 2px solid rgba(255, 170, 34, 0.60);
+}
+
+.special-discount-vector-circle-2 {
+    @apply w-[62px] h-[62px];
+    border: 1px solid rgba(255, 170, 34, 0.60);
+}
+
+.special-discount-vector-circle-3 {
+    @apply w-[80px] h-[80px];
+    border: 1px solid rgba(255, 170, 34, 0.20);
+} */
+
+.special-discount-vector-circle-1.small-theme {
+    @apply w-[44px] h-[44px];
+    border: 2px solid rgba(255, 170, 34, 0.60);
+}
+
+.special-discount-vector-circle-2.small-theme {
+    @apply w-[62px] h-[62px];
+    border: 1px solid rgba(255, 170, 34, 0.60);
+}
+
+.special-discount-vector-circle-3.small-theme {
+    @apply w-[80px] h-[80px];
+    border: 1px solid rgba(255, 170, 34, 0.20);
+}

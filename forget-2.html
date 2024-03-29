@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!--START-MAIN-->
+<main>
+    <!--START-LOGIN-->
+    <div class="w-full bg-white">
+        <div class="absolute top-0 right-0 w-full mb-6 h-[200px]">
+            <div class="relative">
+                <div class="w-fit absolute bottom-6 right-1/2 translate-x-1/2">
+                    <img src="assets/img/logo-2.png" alt="" class="max-w-[180px]">
+                </div>
+                <img src="assets/img/login-1.png" alt="" class="w-full max-h-[200px] object-contain">
+            </div>
+        </div>
+        <div class="container flex flex-col justify-between pb-5 pt-[220px] min-h-screen max-w-[490px]">
+            <!-- <div class="h-[88px]"></div> -->
+            <div class="relative">
+                <div class="flex items-center justify-between mb-16">
+                    <div class="text-md font-bold block text-brown">
+                        کد تایید
+                    </div>
+                    <a href="" class="text-sm-plus font-bold text-brown-lighter flex items-center transition-all hover:text-primary">
+                        بازگشت
+                        <i class="icon-arrow-left mr-2"></i>
+                    </a>
+                </div>
+                <div class="mb-14">
+                    <div class="form-group-wrapper">
+                        <label class="form-group-label !font-medium">
+                            کد پیامک شده به شماره ۰۹۱۸۷۵۲۹۲۸۶ را وارد نمایید
+                        </label>
+                        <div class="flex flex-row-reverse digit-group">
+                            <input type="text" placeholder="" class="ml-2.5 first:ml-0 text-center"  id="digit-1" name="digit-1" data-next="digit-2" >
+                            <input type="text" placeholder="" class="ml-2.5 first:ml-0 text-center" id="digit-2" name="digit-2" data-next="digit-3" >
+                            <input type="text" placeholder="" class="ml-2.5 first:ml-0 text-center" id="digit-3" name="digit-3" data-next="digit-4" >
+                            <input type="text" placeholder="" class="ml-2.5 first:ml-0 text-center" id="digit-4" name="digit-4" data-previous="digit-3" >
+                        </div>
+                    </div>
+                    <div class="text-sm-plus text-primary font-medium block mt-7 text-center">
+                        ۰۱:۳۴ تا ارسال مجدد رمز عبور
+                    </div>
+                </div>
+            </div>
+            <div class="mb-16">
+                <div class="">
+                    <button class="btn btn-primary w-full">
+                        ادامه
+                    </button>
+                </div>
+                <div class="text-xs text-brown-lighter flex items-center mt-4">
+                    <i class="icon-information text-xl text-brown ml-2.5"></i>
+                    ورود یا ثبت‌نام شما به منزله‌ی پذیرش تمامی قوانین و مقررات مجموعه‌ی دکتر کافی خواهد بود!
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-xs-plus text-brown-lighter block text-center font-medium">
+                    تمام حقوق اين وب‌سايت نیز متعلق به مجموعه‌ی دکتر کافی است
+                    <br>
+                    دکتر کافی ۱۴۰۱ - ۱۴۰۲
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--START-LOGIN-->
+</main>
+<!--END-MAIN-->
+
+
+
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>

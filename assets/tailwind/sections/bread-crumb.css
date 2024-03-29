@@ -1,0 +1,3 @@
+.bread-crumb-item:after {
+    @apply content-["\e921"] font-["icomoon"] absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 text-brown-lighter text-[10px]
+}

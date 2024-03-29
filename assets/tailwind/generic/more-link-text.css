@@ -1,0 +1,29 @@
+.more-link-text {
+    @apply text-brown-lighter font-medium text-sm-plus flex items-center ml-auto transition-all hover:text-primary
+}
+.more-link-text i {
+    @apply text-xs-plus text-primary mr-2
+}
+.more-link-text.more-link-text-brown {
+    @apply text-brown hover:text-primary
+}
+.more-link-text.more-link-text-primary {
+    @apply text-primary
+}
+
+
+
+
+.tab-mega-menu {
+    @apply relative
+}
+.tab-mega-menu:before {
+    @apply content-[""] absolute top-1/2 left-0 transform -translate-y-1/2 w-[3px] h-[calc(100%-12px)]
+    bg-primary opacity-0
+}
+.tab-mega-menu.active {
+    @apply text-primary
+}
+.tab-mega-menu.active:before {
+    @apply opacity-100
+}

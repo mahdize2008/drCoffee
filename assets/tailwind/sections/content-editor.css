@@ -1,0 +1,55 @@
+.content-editor p {
+    @apply text-sm-plus text-brown block mb-5 font-medium leading-[33px]
+}
+
+.content-editor h1 ,
+.content-editor h2 ,
+.content-editor h3 ,
+.content-editor h4 ,
+.content-editor h5 ,
+.content-editor h6 {
+    @apply text-brown font-bold block mb-5
+}
+.content-editor h1 {
+    @apply text-6xl
+}
+.content-editor h2 {
+    @apply text-5xl
+}
+.content-editor h3 {
+    @apply text-4xl
+}
+.content-editor h4 {
+    @apply text-2xl
+}
+.content-editor h5 {
+    @apply text-xl
+}
+.content-editor h6 {
+    @apply text-md
+}
+.content-editor img {
+    @apply mb-5 max-w-full
+}
+.content-editor figure {
+    @apply mb-5
+}
+.content-editor figcaption {
+    @apply text-sm-plus text-brown-lighter flex items-center
+}
+.content-editor ul {
+    @apply mb-5
+}
+.content-editor ul li {
+    @apply text-base text-brown font-bold flex items-center mb-3.5 last:mb-0
+}
+.content-editor ul li:before {
+    @apply content-[""] w-3 h-3 rounded-full block ml-3 border-4 border-solid border-primary
+}
+
+.content-editor .accordionMenu li:before {
+    display: none !important;
+}
+.content-editor .accordionMenu li {
+    @apply !block
+}

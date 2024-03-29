@@ -1,0 +1,6 @@
+.filter-tab::before{
+    @apply content-[''] bg-primary h-0.5 -bottom-[1px] left-0 absolute w-full hidden
+}
+.filter-tab.active::before{
+    @apply block
+}

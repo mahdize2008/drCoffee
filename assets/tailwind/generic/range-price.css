@@ -1,0 +1,48 @@
+
+.range-price {
+  @apply pr-5 !rounded-full overflow-hidden !bg-natural-alpha;
+
+}
+.range-price .noUi-target {
+  @apply !h-5 !bg-natural-alpha !border-none !rounded-none;
+}
+.range-price .noUi-connects {
+  @apply rounded-none;
+}
+.range-price .noUi-connect {
+  @apply bg-secondary;
+}
+.range-price .noUi-handle {
+  @apply !w-5 !h-5 !left-0 !rounded-none;
+  background-image: linear-gradient(
+    to left,
+    #fa2 0px,
+    #fa2 10px,
+    #efebe8 10px,
+    #efebe8 100%
+  );
+}
+.range-price .noUi-handle.noUi-handle-lower {
+  background-image: linear-gradient(
+    to right,
+    #fa2 0px,
+    #fa2 10px,
+    #efebe8 10px,
+    #efebe8 100%
+  );
+}
+.range-price .noUi-handle.noUi-handle-upper {
+    @apply z-10
+}
+.range-price .noUi-horizontal .noUi-handle {
+  @apply !top-0 !shadow-none after:hidden before:hidden;
+  border: none !important;
+  background-color: transparent !important;
+}
+.range-price .noUi-horizontal .noUi-handle .noUi-touch-area {
+  @apply !top-0 rounded-full bg-primary !shadow-none relative flex items-center justify-center cursor-pointer;
+  background-image: none !important;
+}
+.range-price .noUi-horizontal .noUi-handle .noUi-touch-area:after {
+  @apply content-[""] w-[1.5px] h-2 bg-white rounded-full bg-white block;
+}

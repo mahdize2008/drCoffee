@@ -1,0 +1,9 @@
+.text-public {
+    @apply text-sm text-brown opacity-60 block text-justify font-medium leading-[2]
+}
+.text-public.text-public-brown {
+    @apply opacity-100
+}
+.text-public.text-public-lg {
+    @apply text-base
+}

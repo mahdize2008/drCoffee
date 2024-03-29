@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/noUi/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <div class="backdrop" style="display: none;"></div>
+
+
+    <!-- START-MENU -->
+    <div class="menu fixed-box fixed w-full h-full top-0 bg-white z-[90] overflow-y-auto -right-full max-w-[390px]">
+        <div class="border-b-2 border-natural-alpha pt-4"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="flex items-center justify-between mb-3.5 px-4">
+                <a href="#"
+                    class="btn-close-menu xs:w-12 w-[42px] xs:h-12 h-[42px] flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                    <i class="icon-close"></i>
+                </a>
+                <a href="#" class="text-base font-bold text-brown flex items-center transition-all hover:text-primary">
+                    ۰۲۱-۴۵۶۷
+                    <img src="assets/img/icon-call.svg" alt="" class="mr-2 h-5">
+                </a>
+            </div>
+            <ul class="flex items-center mb-3 px-4">
+                <li class="py-2 ml-4 last:ml-0 w-1/2">
+                    <a href="" class="btn btn-outline-natural">
+                        <i class="icon-user !mr-0 ml-2"></i>
+                        ورود و عضویت
+                    </a>
+                </li>
+                <li class="py-2 ml-4 last:ml-0 w-1/2">
+                    <a href="" class="btn btn-outline-natural">
+                        بلاگ دکتر کافی
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex items-center">
+                <li data-filter="one"
+                    class="filter-tab relative text-brown-lighter [&.active]:text-primary xs:text-base text-sm-plus font-semibold pt-2 pb-3 text-center w-1/2 active">
+                    دسته‌بندی محصولات
+                </li>
+                <li data-filter="two"
+                    class="filter-tab relative text-brown-lighter [&.active]:text-primary xs:text-base text-sm-plus font-semibold pt-2 pb-3 text-center w-1/2">
+                    دسته‌بندی محصولات
+                </li>
+            </ul>
+        </div>
+        <div class="bg-menu-light">
+            <ul class="mb-2">
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            دانه قهوه
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul style="display: none;" class="accordion-item-body px-4 py-1 bg-menu-light">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            قهوه ساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            اسپرسوساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            اسپرسوساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item one accordion-item border-b-2 last:border-b-0 border-natural-alpha transition-all px-4 [&.active]:!bg-white">
+                    <div class="accordion-item-header cursor-pointer flex items-center justify-between py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            اسپرسوساز
+                        </h2>
+                        <div class="accordion-item-icon text-brown-lighter text-2xs font-bold">
+                            <i class="icon-up hidden"></i>
+                            <i class="icon-down"></i>
+                        </div>
+                    </div>
+                    <ul class="accordion-item-body px-4 py-1"
+                        style="display: none; background: linear-gradient(180deg, #F4F1F0 0%, rgba(244, 241, 240, 0.00) 100%);">
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                قهوه‌ساز دستی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                موکاپات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm-plus text-brown font-bold hover:text-primary py-3 block">
+                                لوازم جانبی قهوه‌ساز
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-filter-item two border-b-2 last:border-b-0 border-natural-alpha px-4" style="display: none;">
+                    <a href="#" class="flex justify-between items-center py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            تماس با ما
+                        </h2>
+                        <i class="icon-left text-brown-lighter text-2xs font-bold"></i>
+                    </a>
+                </li>
+                <li class="menu-filter-item two border-b-2 last:border-b-0 border-natural-alpha px-4" style="display: none;">
+                    <a href="#" class="flex justify-between items-center py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            درباره ما
+                        </h2>
+                        <i class="icon-left text-brown-lighter text-2xs font-bold"></i>
+                    </a>
+                </li>
+                <li class="menu-filter-item two border-b-2 last:border-b-0 border-natural-alpha px-4" style="display: none;">
+                    <a href="#" class="flex justify-between items-center py-4">
+                        <h2 class="text-sm-plus text-brown font-medium">
+                            شعب حضوری
+                        </h2>
+                        <i class="icon-left text-brown-lighter text-2xs font-bold"></i>
+                    </a>
+                </li>
+            </ul>
+             
+        </div>
+    </div>
+    <!-- END-MENU -->
+
+
+
+    <!-- START-SEARCH-BOX -->
+    <div class="search-box fixed-box fixed w-full h-full top-0 z-50 overflow-y-auto bg-white -right-full">
+        <div class="p-4 border-b-2 border-b-natural-alpha"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <form class="w-full bg-white rounded-full flex overflow-hidden">
+                <div class="flex h-12 border-2 border-natural-alpha border-l-0 grow rounded-r-full shrink">
+                    <a href="#"
+                        class="btn-close-search-box shrink-0 flex items-center justify-center xs:px-4 px-3 max-xs:text-sm-plus">
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <input type="text" class="bg-white grow outline-none pl-2">
+                </div>
+                <button
+                    class="flex items-center max-xs:justify-center xs:px-4 max-xs:w-12 max-xs:h-12 bg-primary text-white !shrink-0">
+                    <span class="max-xs:hidden">جستجو</span><i class="icon-search -rotate-[45deg] xs:mr-2"></i>
+                </button>
+            </form>
+        </div>
+        <div class="swiper swiper-container swiper-search-product pt-7 mb-4 px-4">
+            <div class="swiper-wrapper">
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="flex items-center">
+                        <div class="shrink-0 ml-3">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="-m-1.5 flex items-center">
+                        <div class="p-1.5 shrink-0">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="p-1.5 text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="-m-1.5 flex items-center">
+                        <div class="p-1.5 shrink-0">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="p-1.5 text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide relative w-[200px] before:w-[1px] before:h-full before:bg-natural before:-left-4 before:-translate-x-1/2 before:absolute before:top-1/2 before:-translate-y-1/2 last:before:hidden">
+                    <div class="-m-1.5 flex items-center">
+                        <div class="p-1.5 shrink-0">
+                            <img src="./assets/img/p-1.png" class="w-fit h-[60px]" alt="">
+                        </div>
+                        <h2 class="p-1.5 text-sm text-brown text-justify">
+                            لورم ایپسوم اسپرسو ساز برند نسپرسو...
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="px-4">
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-primary text-sm-plus py-3">
+                    <i class="icon-search rotate-[135deg] ml-3 text-base-plus"></i>
+                    مشاهده همه نتایج
+                </a>
+            </li>
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-brown text-sm-plus py-3">
+                    <i class="icon-up-right-arrow ml-3 text-xs-plus text-brown-lighter"></i>
+                    اسپرسوساز نسپرسو
+                </a>
+            </li>
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-brown text-sm-plus py-3">
+                    <i class="icon-up-right-arrow ml-3 text-xs-plus text-brown-lighter"></i>
+                    موکاپات
+                </a>
+            </li>
+            <li class="border-b border-b-natural-alpha last:border-b-0">
+                <a href="#" class="flex items-center text-brown text-sm-plus py-3">
+                    <i class="icon-up-right-arrow ml-3 text-xs-plus text-brown-lighter"></i>
+                    قهوه‌جوش دمی
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END-SEARCH-BOX -->
+
+
+    <!--START-notification-MODAL-->
+    <div class="modal modal-notification fixed-box question-box fixed w-full h-full top-0 z-[90] overflow-y-auto bg-white"
+        style="display: none;">
+        <div class="border-b-2 border-natural-alpha p-3"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="md:container text-brown text-md font-semibold flex items-center">
+                <a href="#"
+                    class="btn-close-modal ml-4 w-12 h-12 flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                    <i class="icon-arrow-right"></i>
+                </a>
+                اطلاعیه‌ها
+            </div>
+        </div>
+        <div class="h-[calc(100%-74px)] flex items-center justify-center flex-col">
+            <img src="assets/img/none.png" alt="" class="mx-auto mb-3 ">
+            <div class="text-base font-bold block text-center text-brown mb-1">
+                چیزی برای نمایش وجود نداره :(
+            </div>
+        </div>
+    </div>
+    <!--END-notification-MODAL-->
+
+    <!-- START-LOGOUT-SORT-BOX -->
+    <div class="logout-sort-box fixed-box fixed w-full h-fit pb-16 bottom-0 px-4 z-[90] bg-white rounded-t-2xl border-t-2 border-t-natural"
+        style="display: none;">
+        <div class="sm:container">
+            <div class="h-[5px] bg-natural-alpha mx-auto w-[80px] mt-3 mb-6 rounded-full"></div>
+        <div class="text-center text-md text-brown font-bold mb-4">
+            آیا مطمئن هستید می‌خواهید خارج شوید؟
+        </div>
+        <ul class="-m-2 flex items-center">
+            <li class="w-1/2 p-2">
+                <a href="#"
+                    class="text-sm-plus border-[1.5px] rounded-lg border-natural-alpha block text-center text-brown font-medium py-3">
+                    بله
+                </a>
+            </li>
+            <li class="w-1/2 p-2">
+                <a href="#"
+                    class="btn-close-logout-sort-box text-sm-plus border-[1.5px] rounded-lg border-natural-alpha block text-center text-brown font-medium py-3 bg-natural">
+                    لغو
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <!-- END-LOGOUT-SORT-BOX -->
+
+    <!--START-HEADER-->
+    <header id="header" class="header shadow-header">
+        <div class="py-3">
+            <div class="container flex items-center justify-between">
+                <div class="py-2 last:ml-0">
+                    <a href="" class="menu-button btn btn-outline-natural aspect-square !p-0">
+                        <i class="icon-menu !mr-0"></i>
+                    </a>
+                </div>
+                <a href="" class="block">
+                    <img src="assets/img/logo.png" alt="" class="max-w-[130px]">
+                </a>
+
+                <ul class="flex items-center">
+                    <li class="py-2 ml-4 last:ml-0">
+                        <a href="" class="btn btn-primary btn-sq">
+                            <span class="btn-number-cart">3</span>
+                            <i class="icon-shopping-bag !text-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pb-5">
+            <div class="container flex items-center">
+                <form class="header-search-box flex-grow flex items-center">
+                    <button class="h-12 w-14 bg-natural text-md text-primary rounded-r-full">
+                        <i class="icon-search transform rotate-[135deg]"></i>
+                    </button>
+                    <div class="input-container header-search-input w-full">
+                        <input type="text" placeholder="عنوان محصول مورد نظر را وارد کنید..." class="input input-round">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--END-HEADER-->
+
+    <!--START-MAIN-->
+    <main class="">
+
+        <!-- START-PROFILE-SPECIFICATIONS -->
+        <div class="border-solid border-b-2 border-[#F2EFED] py-5 ">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="text-md text-primary font-bold flex items-center mb-2">
+                            خوش آمدید!
+                        </div>
+                        <div class="text-sm text-brown-light font-medium flex items-center">
+                            ۰۹۱۸۷۵۲۹۲۸۶
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="group btn-show-modal btn btn-sq btn-natural-brown-lightness ml-4 last:ml-0"
+                            data-modal="modal-notification">
+                            <i class="icon-bell !mr-0 !text-lg"></i>
+                            <span
+                                class="w-6 h-6 text-sm font-medium text-white flex items-center justify-center bg-primary border-[1.5px] border-solid border-white rounded-full absolute top-0 right-0 translate-x-1/3 -translate-y-1/3">
+                                ۳
+                            </span>
+                        </div>
+                        <div
+                            class="select-logout-sort-box btn-show-modal btn btn-sq btn-natural-brown-lightness ml-4 last:ml-0">
+                            <i class="icon-logout !text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END-PROFILE-SPECIFICATIONS -->
+
+        <!-- START-ORDERS -->
+        <div class="border-solid border-b-2 border-[#F2EFED] py-5">
+            <div class="container">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div class="text-md text-brown font-bold block">
+                        خلاصه سفارش‌ها
+                    </div>
+                    <a href=""
+                        class="text-sm-plus text-brown-lighter font-medium block transition-all hover:text-primary">
+                        مشاهده همه
+                    </a>
+                    <div class="swiper swiper-container swiper-order-step mt-4 overflow-visible !mx-0 w-full">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide group shrink-0 flex items-center w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                                    <g clip-path="url(#clip0_532_5861)">
+                                        <path
+                                            d="M50.2573 61.4883H12.2829C9.26151 61.4883 6.36383 60.288 4.22736 58.1515C2.09088 56.0151 0.890625 53.1174 0.890625 50.096L0.890625 12.1216C0.890625 9.10013 2.09088 6.20245 4.22736 4.06598C6.36383 1.92951 9.26151 0.729248 12.2829 0.729248L50.2573 0.729248C53.2788 0.729248 56.1764 1.92951 58.3129 4.06598C60.4494 6.20245 61.6496 9.10013 61.6496 12.1216V50.096C61.6496 53.1174 60.4494 56.0151 58.3129 58.1515C56.1764 60.288 53.2788 61.4883 50.2573 61.4883Z"
+                                            fill="#F4F1F0" />
+                                        <path
+                                            d="M38.2291 29.8364C33.6931 29.8364 30.002 33.5275 30.002 38.0636C30.002 42.5996 33.6931 46.2907 38.2291 46.2907C42.7651 46.2907 46.4563 42.5996 46.4563 38.0636C46.4563 33.5275 42.7651 29.8364 38.2291 29.8364ZM41.5101 41.4946C41.4341 41.5937 41.3391 41.6768 41.2307 41.739C41.1223 41.8012 41.0026 41.8412 40.8786 41.8567C40.7546 41.8723 40.6287 41.8631 40.5083 41.8296C40.3879 41.7961 40.2754 41.739 40.1772 41.6617L37.3291 39.4459C37.2149 39.357 37.1225 39.2433 37.059 39.1133C36.9955 38.9833 36.9626 38.8405 36.9627 38.6959V34.5832C36.9627 34.3314 37.0627 34.09 37.2407 33.9119C37.4188 33.7339 37.6602 33.6339 37.912 33.6339C38.1638 33.6339 38.4053 33.7339 38.5833 33.9119C38.7614 34.09 38.8614 34.3314 38.8614 34.5832V38.2326L41.343 40.1636C41.5415 40.318 41.6705 40.545 41.7019 40.7945C41.7332 41.0441 41.6642 41.2958 41.5101 41.4946Z"
+                                            fill="#E25020" />
+                                        <path
+                                            d="M27.7491 15.9132L21.5973 15.9379C20.7998 15.9379 20.0536 16.3803 19.6739 17.0771L16.4593 22.9005L27.1301 22.8758L27.7491 15.9132ZM40.9889 22.8492L37.7364 17.0258C37.5438 16.6811 37.2629 16.3938 36.9225 16.1936C36.5822 15.9933 36.1946 15.8874 35.7997 15.8866L29.6478 15.9113L30.2934 22.8739L40.9889 22.8492ZM41.3952 27.7726C39.5244 27.1985 37.5324 27.1453 35.6336 27.6185C33.7347 28.0918 32.0008 29.0737 30.6182 30.4586C29.2356 31.8436 28.2566 33.5792 27.7866 35.4788C27.3165 37.3785 27.3732 39.3703 27.9504 41.2402L18.115 41.2649H18.1017C17.5736 41.2614 17.0683 41.0492 16.6959 40.6747C16.3235 40.3002 16.1143 39.7937 16.1138 39.2655L16.0625 24.7973L27.7719 24.7726H29.6706L41.38 24.7346L41.3952 27.7726Z"
+                                            fill="#B09D97" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_532_5861">
+                                            <rect width="60.759" height="60.759" fill="white"
+                                                transform="translate(0.890625 0.729248)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="pr-4">
+                                    <div class="text-sm-plus text-brown font-medium block mb-0.5">
+                                        <span class="text-xl text-primary"> 0 </span>
+
+                                        سفارش
+                                    </div>
+                                    <div class="text-xs-plus font-medium block text-brown-lighter transition-all group-hover:text-brown">
+                                        در انتظار بررسی
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide group shrink-0 flex items-center w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="62" viewBox="0 0 61 62"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_532_5869)">
+                                        <path
+                                            d="M49.4976 61.4881H11.5232C8.50175 61.4881 5.60406 60.2879 3.46759 58.1514C1.33112 56.0149 0.130859 53.1173 0.130859 50.0958L0.130859 12.1214C0.130859 9.10001 1.33112 6.20233 3.46759 4.06586C5.60406 1.92938 8.50175 0.729126 11.5232 0.729126L49.4976 0.729126C52.519 0.729126 55.4167 1.92938 57.5531 4.06586C59.6896 6.20233 60.8899 9.10001 60.8899 12.1214V50.0958C60.8899 53.1173 59.6896 56.0149 57.5531 58.1514C55.4167 60.2879 52.519 61.4881 49.4976 61.4881Z"
+                                            fill="#F4F1F0" />
+                                        <path
+                                            d="M43.9097 32.9636C43.514 32.4673 43.0637 32.017 42.5673 31.6212C41.1189 30.4638 39.3195 29.8343 37.4654 29.8364C35.2847 29.8405 33.1944 30.7085 31.6524 32.2506C30.1104 33.7926 29.2423 35.8828 29.2383 38.0636C29.2367 39.9175 29.8662 41.7168 31.0231 43.1654C31.4161 43.6591 31.8718 44.1148 32.3655 44.5078C33.7572 45.6224 35.542 46.2926 37.4673 46.2926C39.6481 46.2886 41.7384 45.4205 43.2804 43.8785C44.8224 42.3365 45.6905 40.2462 45.6945 38.0655C45.6967 36.2114 45.0671 34.412 43.9097 32.9636ZM37.4673 44.3939C36.0623 44.3939 34.7711 43.9382 33.7212 43.1541C33.201 42.7857 32.7471 42.3318 32.3788 41.8117C31.57 40.7305 31.1348 39.4157 31.1389 38.0655C31.1394 36.3872 31.8063 34.7779 32.993 33.5912C34.1797 32.4045 35.7891 31.7376 37.4673 31.7371C38.8724 31.7371 40.1635 32.1927 41.2135 32.9769C41.7319 33.3434 42.1875 33.7991 42.5559 34.3193C43.3401 35.3693 43.7958 36.6604 43.7958 38.0655C43.7948 39.7436 43.1277 41.3527 41.9411 42.5393C40.7545 43.7258 39.1454 44.3929 37.4673 44.3939Z"
+                                            fill="#E25020" />
+                                        <path
+                                            d="M43.9101 32.9637L42.5563 34.3175L33.7216 43.1523L32.3678 44.506C31.8714 44.1103 31.4211 43.66 31.0254 43.1637L32.3792 41.8099L41.2139 32.9751L42.5677 31.6213C43.0633 32.0144 43.519 32.4701 43.9101 32.9637Z"
+                                            fill="#E25020" />
+                                        <path
+                                            d="M26.9875 15.9132L20.8356 15.9379C20.0381 15.9379 19.2919 16.3803 18.9122 17.0771L15.6977 22.9005L26.3685 22.8758L26.9875 15.9132ZM40.2272 22.8493L36.9747 17.0259C36.7822 16.6811 36.5012 16.3938 36.1609 16.1936C35.8205 15.9934 35.4329 15.8874 35.038 15.8867L28.8862 15.9113L29.5317 22.8739L40.2272 22.8493ZM40.6335 27.7859C39.6086 27.4679 38.5416 27.306 37.4684 27.3055C34.6151 27.3071 31.8791 28.4412 29.8616 30.4588C27.844 32.4763 26.7098 35.2123 26.7083 38.0656C26.7083 39.1536 26.8735 40.2168 27.202 41.2421L17.3552 41.2668H17.342C16.8138 41.2633 16.3085 41.0512 15.9361 40.6767C15.5637 40.3022 15.3545 39.7956 15.354 39.2675L15.3027 24.7992L27.0121 24.7746H28.9109L40.6203 24.7366L40.6335 27.7859Z"
+                                            fill="#B09D97" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_532_5869">
+                                            <rect width="60.759" height="60.759" fill="white"
+                                                transform="translate(0.130859 0.729248)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="pr-4">
+                                    <div class="text-sm-plus text-brown font-medium block mb-0.5">
+                                        <span class="text-xl text-primary"> 0 </span>
+
+                                        سفارش
+                                    </div>
+                                    <div
+                                        class="text-xs-plus font-medium block text-brown-lighter transition-all group-hover:text-brown">
+                                        لغو شده
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide group shrink-0 flex items-center w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_532_5865)">
+                                        <path
+                                            d="M49.7397 61.4883H11.7654C8.74393 61.4883 5.84625 60.288 3.70978 58.1515C1.57331 56.0151 0.373047 53.1174 0.373047 50.096L0.373047 12.1216C0.373047 9.10013 1.57331 6.20245 3.70978 4.06598C5.84625 1.92951 8.74393 0.729248 11.7654 0.729248L49.7397 0.729248C52.7612 0.729248 55.6589 1.92951 57.7953 4.06598C59.9318 6.20245 61.1321 9.10013 61.1321 12.1216V50.096C61.1321 53.1174 59.9318 56.0151 57.7953 58.1515C55.6589 60.288 52.7612 61.4883 49.7397 61.4883Z"
+                                            fill="#F4F1F0" />
+                                        <path
+                                            d="M37.7115 29.8364C33.1755 29.8364 29.4844 33.5275 29.4844 38.0636C29.4844 42.5996 33.1755 46.2907 37.7115 46.2907C42.2476 46.2907 45.9387 42.5996 45.9387 38.0636C45.9387 33.5275 42.2476 29.8364 37.7115 29.8364ZM42.6864 36.2723L37.3073 41.3362C37.1324 41.4958 36.9042 41.5842 36.6675 41.5842C36.4307 41.5842 36.2025 41.4958 36.0276 41.3362L32.5472 38.171C32.3609 38.0016 32.2495 37.765 32.2376 37.5135C32.2257 37.2619 32.3142 37.0159 32.4836 36.8296C32.6531 36.6433 32.8896 36.5319 33.1412 36.5199C33.3928 36.508 33.6388 36.5965 33.8251 36.766L36.6675 39.3501L41.4086 34.8672C41.5949 34.6978 41.8409 34.6093 42.0925 34.6212C42.344 34.6332 42.5806 34.7445 42.75 34.9309C42.9195 35.1172 43.008 35.3632 42.996 35.6147C42.9841 35.8663 42.8727 36.1028 42.6864 36.2723Z"
+                                            fill="#E25020" />
+                                        <path
+                                            d="M27.2296 15.9132L21.0777 15.9379C20.2803 15.9379 19.5341 16.3803 19.1543 17.0771L15.9398 22.9005L26.6106 22.8758L27.2296 15.9132ZM40.4694 22.8492L37.2168 17.0258C37.0243 16.6811 36.7434 16.3938 36.403 16.1936C36.0626 15.9933 35.6751 15.8874 35.2802 15.8866L29.1283 15.9113L29.7739 22.8739L40.4694 22.8492ZM40.8757 27.7726C39.0048 27.1985 37.0129 27.1453 35.114 27.6185C33.2152 28.0918 31.4812 29.0737 30.0986 30.4586C28.716 31.8436 27.7371 33.5792 27.267 35.4788C26.797 37.3785 26.8536 39.3703 27.4309 41.2402L17.5955 41.2649H17.5822C17.0541 41.2614 16.5487 41.0492 16.1763 40.6747C15.804 40.3002 15.5947 39.7937 15.5942 39.2655L15.543 24.7973L27.2524 24.7726H29.1511L40.8605 24.7346L40.8757 27.7726Z"
+                                            fill="#B09D97" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_532_5865">
+                                            <rect width="60.759" height="60.759" fill="white"
+                                                transform="translate(0.373047 0.729248)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="pr-4">
+                                    <div class="text-sm-plus text-brown font-medium block mb-0.5">
+                                        <span class="text-xl text-primary"> 0 </span>
+
+                                        سفارش
+                                    </div>
+                                    <div
+                                        class="text-xs-plus font-medium block text-brown-lighter transition-all group-hover:text-brown">
+                                        تکمیل شده
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide group shrink-0 flex items-center w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_532_5857)">
+                                        <path
+                                            d="M49.98 61.4883H12.0056C8.98417 61.4883 6.08649 60.288 3.95001 58.1515C1.81354 56.0151 0.613281 53.1174 0.613281 50.096L0.613281 12.1216C0.613281 9.10013 1.81354 6.20245 3.95001 4.06598C6.08649 1.92951 8.98417 0.729248 12.0056 0.729248L49.98 0.729248C53.0014 0.729248 55.8991 1.92951 58.0356 4.06598C60.172 6.20245 61.3723 9.10013 61.3723 12.1216V50.096C61.3723 53.1174 60.172 56.0151 58.0356 58.1515C55.8991 60.288 53.0014 61.4883 49.98 61.4883Z"
+                                            fill="#F4F1F0" />
+                                        <path
+                                            d="M44.5939 37.1145C44.3421 37.1145 44.1007 37.2145 43.9226 37.3926C43.7446 37.5706 43.6446 37.8121 43.6446 38.0639C43.6446 41.2044 41.0889 43.76 37.9484 43.76C34.8079 43.76 32.2522 41.2044 32.2522 38.0639C32.2522 34.9234 34.8079 32.3677 37.9484 32.3677C39.2623 32.3677 40.5136 32.8291 41.5066 33.6342H40.1623C39.9105 33.6342 39.669 33.7342 39.491 33.9122C39.313 34.0903 39.2129 34.3317 39.2129 34.5835C39.2129 34.8353 39.313 35.0768 39.491 35.2548C39.669 35.4329 39.9105 35.5329 40.1623 35.5329H43.3275C43.5793 35.5329 43.8207 35.4329 43.9988 35.2548C44.1768 35.0768 44.2768 34.8353 44.2768 34.5835V31.4184C44.2768 31.1666 44.1768 30.9251 43.9988 30.7471C43.8207 30.569 43.5793 30.469 43.3275 30.469C43.0757 30.469 42.8342 30.569 42.6562 30.7471C42.4781 30.9251 42.3781 31.1666 42.3781 31.4184V31.9139C41.0907 30.9775 39.5403 30.4718 37.9484 30.469C33.7598 30.469 30.3535 33.8753 30.3535 38.0639C30.3535 42.2524 33.7598 45.6587 37.9484 45.6587C42.137 45.6587 45.5433 42.2524 45.5433 38.0639C45.5433 37.8121 45.4432 37.5706 45.2652 37.3926C45.0872 37.2145 44.8457 37.1145 44.5939 37.1145Z"
+                                            fill="#E25020" />
+                                        <path
+                                            d="M27.4718 15.9132L21.3199 15.9379C20.5225 15.9379 19.7763 16.3803 19.3965 17.0771L16.182 22.9005L26.8528 22.8758L27.4718 15.9132ZM40.7115 22.8492L37.459 17.0258C37.2665 16.6811 36.9856 16.3938 36.6452 16.1936C36.3048 15.9933 35.9172 15.8874 35.5223 15.8866L29.3705 15.9113L30.0161 22.8739L40.7115 22.8492ZM41.1179 27.7726C39.247 27.1985 37.2551 27.1453 35.3562 27.6185C33.4574 28.0918 31.7234 29.0737 30.3408 30.4586C28.9582 31.8436 27.9793 33.5792 27.5092 35.4788C27.0392 37.3785 27.0958 39.3703 27.673 41.2402L17.8377 41.2649H17.8244C17.2963 41.2614 16.7909 41.0492 16.4185 40.6747C16.0462 40.3002 15.8369 39.7937 15.8364 39.2655L15.7852 24.7973L27.4946 24.7726H29.3933L41.1027 24.7346L41.1179 27.7726Z"
+                                            fill="#B09D97" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_532_5857">
+                                            <rect width="60.759" height="60.759" fill="white"
+                                                transform="translate(0.613281 0.729248)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="pr-4">
+                                    <div class="text-sm-plus text-brown font-medium block mb-0.5">
+                                        <span class="text-xl text-primary"> 0 </span>
+
+                                        سفارش
+                                    </div>
+                                    <div
+                                        class="text-xs-plus font-medium block text-brown-lighter transition-all group-hover:text-brown">
+                                        در حال انجام
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END-ORDERS -->
+
+        <!-- START-PROFILE-SECTION -->
+        <div class="bg-white py-5" style="box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.07);">
+            <div class="container">
+                <div class="mb-6">
+                    <div class="flex items-center mb-6">
+                        <i class="icon-information text-xl text-brown-lighter ml-2.5"></i>
+                        <div class="text-sm-plus text-brown font-medium">
+                            جهت استفاده از خدمات دکتر کافی، لطفا فرم اطلاعات شخصی را جهت تایید هویت، تکمیل نمایید
+                        </div>
+                    </div>
+                    <a href=""
+                        class="text-sm-plus text-primary justify-center bg-secondary/20 p-4 rounded-xl font-bold flex items-center mr-auto transition-all hover:text-secondary">
+                        تکمیل اطلاعات حساب کاربری
+                        <i class="icon-arrow-left mr-2.5"></i>
+                    </a>
+                </div>
+                <ul class="w-full">
+                    <li>
+                        <a href="#" class="group active text-sm-plus text-brown-lighter flex items-center p-4 rounded-full transition-all hover:bg-natural [&.active]:bg-primary [&.active]:text-white">
+                            <i class="icon-house text-xl ml-3 text-brown group-[&.active]:text-white"></i>
+                            داشبورد
+                            <i
+                                class="icon-left text-xs text-brown-lighter group-[&.active]:text-white group-[&.active]:opacity-100 mr-auto"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-sm-plus text-brown-lighter flex items-center p-4 rounded-full transition-all hover:text-brown [&.active]:bg-primary [&.active]:text-white cursor-pointer">
+                            <i class="icon-file text-xl ml-3 text-brown group-[&.active]:text-white"></i>
+                            تاریخچه سفارشات
+                            <i
+                                class="icon-left text-xs text-brown-lighter group-[&.active]:text-white group-[&.active]:opacity-100 mr-auto"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-sm-plus text-brown-lighter flex items-center p-4 rounded-full transition-all hover:text-brown [&.active]:bg-primary [&.active]:text-white cursor-pointer">
+                            <i class="icon-user1 text-xl ml-3 text-brown group-[&.active]:text-white"></i>
+                            اطلاعات کاربری
+                            <i
+                                class="icon-left text-xs text-brown-lighter group-[&.active]:text-white group-[&.active]:opacity-100 mr-auto"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-sm-plus text-brown-lighter flex items-center p-4 rounded-full transition-all hover:text-brown [&.active]:bg-primary [&.active]:text-white cursor-pointer">
+                            <i class="icon-heart1 text-xl ml-3 text-brown group-[&.active]:text-white"></i>
+                            محصولات مورد علاقه
+                            <i
+                                class="icon-left text-xs text-brown-lighter group-[&.active]:text-white group-[&.active]:opacity-100 mr-auto"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-sm-plus text-brown-lighter flex items-center p-4 rounded-full transition-all hover:text-brown [&.active]:bg-primary [&.active]:text-white cursor-pointer">
+                            <i class="icon-map-pin text-xl ml-3 text-brown group-[&.active]:text-white"></i>
+                            آدرس‌های من
+                            <i
+                                class="icon-left text-xs text-brown-lighter group-[&.active]:text-white group-[&.active]:opacity-100 mr-auto"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-sm-plus text-brown-lighter flex items-center p-4 rounded-full transition-all hover:text-brown [&.active]:bg-primary [&.active]:text-white cursor-pointer">
+                            <i class="icon-message-square text-xl ml-3 text-brown group-[&.active]:text-white"></i>
+                            دیدگاه‌های من
+                            <i
+                                class="icon-left text-xs text-brown-lighter group-[&.active]:text-white group-[&.active]:opacity-100 mr-auto"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END-PROFILE-SECTION -->
+    </main>
+    <!--END-MAIN-->
+
+
+
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/noUi/nouislider.min.js"></script>
+    <script src="assets/js/public.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

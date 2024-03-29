@@ -1,0 +1,70 @@
+.input-container.header-search-input .input {
+    @apply pr-0 rounded-r-none
+}
+.header {
+    @apply relative z-10
+}
+.header:after {
+    @apply content-[""] absolute -bottom-[3px] right-0 w-full h-[3px];
+    background-image: linear-gradient(to left , #ffffff , #F4F1F0 , #ffffff);
+}
+
+.header-quick-assets {
+    @apply relative z-10
+}
+.header-quick-assets .sub-menu {
+    @apply absolute top-full right-0 w-full rounded-xl
+    border-2 border-solid border-natural-alpha bg-white shadow-normal
+}
+.header-quick-assets .sub-menu li {
+    @apply w-full relative last:after:hidden
+}
+.header-quick-assets .sub-menu li:after {
+    @apply content-[""] absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-1/2
+    w-[calc(100%-28px)] h-[1px] bg-natural-alpha
+}
+.header-quick-assets .sub-menu li a {
+    @apply flex items-center justify-between p-[14px] text-sm text-brown font-semibold
+    transition-all hover:text-primary
+}
+.header-quick-assets .sub-menu li a i {
+    @apply text-xs text-natural-alpha transition-all
+}
+.header-quick-assets .sub-menu li a:hover i {
+    @apply text-primary
+}
+.header-quick-assets:hover >a {
+    @apply bg-natural border-natural
+}
+
+
+.header-nav-menu .sub-menu {
+    @apply absolute top-full right-1/2 transform translate-x-1/2 w-full rounded-b-xl
+    border-2 border-solid border-natural-alpha bg-white shadow-normal min-w-[160px]
+}
+.header-nav-menu .sub-menu li {
+    @apply w-full relative last:after:hidden
+}
+.header-nav-menu .sub-menu li:after {
+    @apply content-[""] absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-1/2
+    w-[calc(100%-28px)] h-[1px] bg-natural-alpha
+}
+.header-nav-menu .sub-menu li a {
+    @apply flex items-center justify-between p-[14px] text-sm text-brown font-semibold
+    transition-all hover:text-primary
+}
+.header-nav-menu .sub-menu li a i {
+    @apply text-xs text-natural-alpha transition-all
+}
+.header-nav-menu .sub-menu li a:hover i {
+    @apply text-primary
+}
+.header-nav-menu:hover >a {
+    @apply text-primary
+}
+
+
+.header-nav-menu .mega-menu {
+    @apply absolute top-full right-0 w-full rounded-b-xl
+    border-2 border-solid border-natural-alpha bg-white shadow-normal min-w-[600px]
+}

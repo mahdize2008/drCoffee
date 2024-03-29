@@ -1,0 +1,18 @@
+.about-img-circle-1,
+.about-img-circle-2 {
+    @apply absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2
+}
+
+.about-img-circle-1 {
+    border: 2px solid rgba(0, 0, 0, 0.14);
+    width: 336.37px;
+    height: 336.37px;
+    border-radius: 50%;
+}
+
+.about-img-circle-2 {
+    border: 1.5px solid rgba(0, 0, 0, 0.10);
+    width: 423.42px;
+    height: 423.42px;
+    border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+.alert-public {
+    @apply flex items-center rounded-xl text-sm-plus font-medium p-2.5 w-fit w-full
+}
+.alert-public i {
+    @apply text-xl ml-2
+}
+.alert-public-danger {
+    @apply text-danger bg-danger bg-opacity-10
+}
+.alert-public-success {
+    @apply text-success bg-success-alpha-lighter
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/Select2/select2.min.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/noUi/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--START-ORDER-LIST-MODAL-->
+    <div class="modal modal-order-list fixed-box question-box fixed w-full h-full top-0 z-[90] overflow-y-auto bg-white" >
+        <div class="border-b-2 border-natural-alpha p-3"
+            style="background: radial-gradient(63.12% 150.88% at 50% 100%, #F2EFED 0%, rgba(242, 239, 237, 0.00) 100%);">
+            <div class="md:container flex items-center text-brown text-md font-semibold mb-3">
+                <a href="#"
+                    class="btn-close-modal ml-4 w-12 h-12 flex items-center justify-center text-brown text-base bg-natural border-2 border-natural-alpha rounded-xl">
+                    <i class="icon-arrow-right"></i>
+                </a>
+                تاریخچه سفارشات
+            </div>
+            <ul class="md:container flex overflow-x-auto -mx-3 px-3">
+                <li class="group shrink-0 tab-item active text-sm font-medium text-brown py-2 pr-3 pl-2 rounded-lg bg-natural cursor-pointer flex items-center [&.active]:bg-primary [&.active]:text-white ml-3 last:ml-0"
+                    data-filter="one" data-tab-container="order-history">
+                    درانتظار تایید
+                    <span
+                        class="w-[22px] h-[22px] rounded-full bg-white flex items-center justify-center mr-3 group-[&.active]:bg-[rgba(0,0,0,0.2)] pt-[3px]">
+                        3
+                    </span>
+                </li>
+                <li class="group shrink-0 tab-item text-sm font-medium text-brown py-2 pr-3 pl-2 rounded-lg bg-natural cursor-pointer flex items-center [&.active]:bg-primary [&.active]:text-white ml-3 last:ml-0"
+                    data-filter="two" data-tab-container="order-history">
+                    درحال انجام
+                    <span
+                        class="w-[22px] h-[22px] rounded-full bg-white flex items-center justify-center mr-3 group-[&.active]:bg-[rgba(0,0,0,0.2)] pt-[3px]">
+                        3
+                    </span>
+                </li>
+                <li class="group shrink-0 tab-item text-sm font-medium text-brown py-2 pr-3 pl-2 rounded-lg bg-natural cursor-pointer flex items-center [&.active]:bg-primary [&.active]:text-white ml-3 last:ml-0"
+                    data-filter="three" data-tab-container="order-history">
+                    تکمیل شده
+                    <span
+                        class="w-[22px] h-[22px] rounded-full bg-white flex items-center justify-center mr-3 group-[&.active]:bg-[rgba(0,0,0,0.2)] pt-[3px]">
+                        3
+                    </span>
+                </li>
+                <li class="group shrink-0 tab-item text-sm font-medium text-brown py-2 pr-3 pl-2 rounded-lg bg-natural cursor-pointer flex items-center [&.active]:bg-primary [&.active]:text-white ml-3 last:ml-0"
+                    data-filter="four" data-tab-container="order-history">
+                    لغو شده
+                    <span
+                        class="w-[22px] h-[22px] rounded-full bg-white flex items-center justify-center mr-3 group-[&.active]:bg-[rgba(0,0,0,0.2)] pt-[3px]">
+                        3
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul class="py-5">
+                <li
+                    class="order-history one border-b-[1.5px] border-solid border-natural-alpha mb-4 last:mb-0 pb-5 last:border-b-0 last:pb-0">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-base font-bold text-brown flex items-center">
+                            <img src="assets/img/circles.png" alt="" class="ml-2 w-6 h-6" />
+                            در انتظار تایید
+                        </div>
+                        <div class="text-sm font-medium text-brown bg-natural rounded-md px-2 py-0.5">
+                            شماره سفارش: ۳۲۷۸۵۰
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center mb-4">
+                        <div class="text-sm font-medium text-brown">
+                            ۱۲ بهمن ۱۴۰۱
+                        </div>
+                        <div class="w-1 h-1 rounded-full bg-primary block mx-2.5"></div>
+                        <div class="text-sm font-medium text-brown">
+                            مبلغ سفارش:
+                            <b class="text-sm-plus"> ۲۳۶,۰۰۰ تومان </b>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between flex-wrap mb-4">
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                    </div>
+                    <a href="" class="text-sm-plus text-primary font-medium flex items-center transition-all hover:text-brown justify-center">
+                        مشاهده جزییات
+                        <i class="icon-more-vertical mr-2"></i>
+                    </a>
+                </li>
+                <li
+                    class="order-history one border-b-[1.5px] border-solid border-natural-alpha mb-4 last:mb-0 pb-5 last:border-b-0 last:pb-0">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-base font-bold text-brown flex items-center">
+                            <img src="assets/img/circles.png" alt="" class="ml-2 w-6 h-6" />
+                            در انتظار تایید
+                        </div>
+                        <div class="text-sm font-medium text-brown bg-natural rounded-md px-2 py-0.5">
+                            شماره سفارش: ۳۲۷۸۵۰
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center mb-4">
+                        <div class="text-sm font-medium text-brown">
+                            ۱۲ بهمن ۱۴۰۱
+                        </div>
+                        <div class="w-1 h-1 rounded-full bg-primary block mx-2.5"></div>
+                        <div class="text-sm font-medium text-brown">
+                            مبلغ سفارش:
+                            <b class="text-sm-plus"> ۲۳۶,۰۰۰ تومان </b>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between flex-wrap mb-4">
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                    </div>
+                    <a href="" class="text-sm-plus text-primary font-medium flex items-center transition-all hover:text-brown justify-center">
+                        مشاهده جزییات
+                        <i class="icon-more-vertical mr-2"></i>
+                    </a>
+                </li>
+                <li
+                    class="order-history one border-b-[1.5px] border-solid border-natural-alpha mb-4 last:mb-0 pb-5 last:border-b-0 last:pb-0">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-base font-bold text-brown flex items-center">
+                            <img src="assets/img/circles.png" alt="" class="ml-2 w-6 h-6" />
+                            در انتظار تایید
+                        </div>
+                        <div class="text-sm font-medium text-brown bg-natural rounded-md px-2 py-0.5">
+                            شماره سفارش: ۳۲۷۸۵۰
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center mb-4">
+                        <div class="text-sm font-medium text-brown">
+                            ۱۲ بهمن ۱۴۰۱
+                        </div>
+                        <div class="w-1 h-1 rounded-full bg-primary block mx-2.5"></div>
+                        <div class="text-sm font-medium text-brown">
+                            مبلغ سفارش:
+                            <b class="text-sm-plus"> ۲۳۶,۰۰۰ تومان </b>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between flex-wrap mb-4">
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                    </div>
+                    <a href="" class="text-sm-plus text-primary font-medium flex items-center transition-all hover:text-brown justify-center">
+                        مشاهده جزییات
+                        <i class="icon-more-vertical mr-2"></i>
+                    </a>
+                </li>
+                <li class="order-history four border-b-[1.5px] border-solid border-natural-alpha mb-4 last:mb-0 pb-5 last:border-b-0 last:pb-0"
+                    style="display: none;">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-base font-bold text-primary flex items-center">
+                            <img src="assets/img/circles-danger.png" alt="" class="ml-2 w-6 h-6" />
+                            لغو شده!
+                        </div>
+                        <div class="text-sm font-medium text-brown bg-natural rounded-md px-2 py-0.5">
+                            شماره سفارش: ۳۲۷۸۵۰
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center mb-4">
+                        <div class="text-sm font-medium text-brown">
+                            ۱۲ بهمن ۱۴۰۱
+                        </div>
+                        <div class="w-1 h-1 rounded-full bg-primary block mx-2.5"></div>
+                        <div class="text-sm font-medium text-brown">
+                            مبلغ سفارش:
+                            <b class="text-sm-plus"> ۲۳۶,۰۰۰ تومان </b>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between flex-wrap mb-4">
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                        <a href="" class="block w-1/4">
+                            <img src="assets/img/p-1.png" alt="" class="w-20 h-20" />
+                        </a>
+                    </div>
+                    <a href="" class="text-sm-plus text-primary font-medium flex items-center transition-all hover:text-brown justify-center">
+                        مشاهده جزییات
+                        <i class="icon-more-vertical mr-2"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--END-ORDER-LIST-MODAL-->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/Select2/select2.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/noUi/nouislider.min.js"></script>
+    <script src="assets/js/public.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

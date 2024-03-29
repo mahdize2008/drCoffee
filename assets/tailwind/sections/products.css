@@ -1,0 +1,41 @@
+/*.item-product-gradient:before {*/
+/*    @apply content-[""] absolute bottom-0 left-0 w-20 h-20 ;*/
+/*    background: linear-gradient(56deg, rgba(255, 183, 67, 0.27) 0%, rgba(255, 255, 255, 0.00) 100%);*/
+/*}*/
+
+.item-product {
+    background: linear-gradient(56deg, rgba(255, 183, 67, 0.27) 0%, rgba(255, 255, 255, 0.00) 12%);
+}
+.item-product.item-product-none-gradient {
+    background-image: none !important;
+}
+.item-product-wrapper.item-product-wrapper-has-gradient {
+    background-image: linear-gradient(to bottom , #EFEBE8 0% , #EFEBE8 50% , #E25020);
+    padding: 2px;
+}
+.item-product-wrapper.item-product-wrapper-has-gradient .item-product {
+    border: none !important;
+    background-image: none !important;
+}
+
+
+.item-product-countdown-container {
+    @apply absolute top-3 right-1/2 transform translate-x-1/2
+}
+.item-product-countdown {
+    @apply p-0 m-0
+    flex items-center justify-center
+}
+.item-product-countdown-li {
+    @apply text-sm text-brown font-semibold
+}
+.item-product-countdown-li-dots {
+    @apply text-brown mx-1
+}
+.item-product-countdown-bar {
+    @apply bg-natural-alpha rounded-full w-full h-1 relative
+}
+.item-product-countdown-bar div {
+    @apply absolute top-0 left-0 h-full bg-primary rounded-full
+}
+

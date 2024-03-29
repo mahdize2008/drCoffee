@@ -1,0 +1,31 @@
+
+
+ .range-rate-slider {
+    @apply pr-5 !rounded-full overflow-hidden;
+    background-image: linear-gradient(to left , #FA2 0px, #FA2 20px, #EFEBE8 20px, #EFEBE8 100%);
+ }
+ .range-rate-slider .noUi-target {
+    @apply !h-5 !bg-natural-alpha !border-none !rounded-none
+ }
+ .range-rate-slider .noUi-connects {
+    @apply rounded-none
+ }
+ .range-rate-slider .noUi-connect {
+    @apply bg-secondary
+ }
+ .range-rate-slider .noUi-handle {
+    @apply !w-5 !h-5 !left-0 !rounded-none;
+    background-image: linear-gradient(to left , #FA2 0px, #FA2 10px, #EFEBE8 10px, #EFEBE8 100%);
+ }
+ .range-rate-slider .noUi-horizontal .noUi-handle {
+    @apply !top-0 !shadow-none after:hidden before:hidden;
+    border: none !important;
+    background-color: transparent !important;
+ }
+ .range-rate-slider .noUi-horizontal .noUi-handle .noUi-touch-area {
+    @apply !top-0 rounded-full bg-primary !shadow-none relative flex items-center justify-center cursor-pointer;
+    background-image: none !important;
+ }
+ .range-rate-slider .noUi-horizontal .noUi-handle .noUi-touch-area:after {
+    @apply content-[""] w-[1.5px] h-2 bg-white rounded-full bg-white block
+ }
